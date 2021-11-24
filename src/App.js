@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import './App.css';
 import DotRing from "./components/DotRing/DotRing";
+import Header from "./components/Header";
 import { MouseContext } from "./context/mouse-context";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
           onMouseEnter={() => cursorChangeHandler("hovered")}
           onMouseLeave={() => cursorChangeHandler("")}
         >
-            <h1>Israel Musa</h1>
+            <Header />
         </div>
       </div>
       <div className="container" style={{ background: "peachpuff" }}></div>
