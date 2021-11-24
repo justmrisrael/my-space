@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import { MouseContext } from "./context/mouse-context";
 
 function App() {
-  const { cursorType, cursorChangeHandler } = useContext(MouseContext);
+  const { cursorChangeHandler } = useContext(MouseContext);
   return (
     <div className="App">
       <DotRing />
@@ -17,14 +17,10 @@ function App() {
             <Header />
         </div>
       </div>
-      <div className="container" style={{ background: "peachpuff" }}></div>
-    
+      <div className="container" style={{ background: "peachpuff" }}>
+    </div>
     </div>
   );
-}
-
-function changeFont(element, name) {
-  element.style.fontFamily = name;
 }
 
 
