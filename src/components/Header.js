@@ -16,7 +16,5 @@ const Israel = styled.div`
     font-size: 5em;
     display: flex;
     align-items: left;
-    justify-content: Left
-    margin-left: 20px;
-    margin-right: 700px
+    justify-content: Left;
 `
