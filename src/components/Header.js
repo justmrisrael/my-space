@@ -12,7 +12,7 @@ export default Header
 
 const Israel = styled.div`
     font-family: 'Geo';
-    font-size: 5em;
+    font-size: 4em;
     color: #C7CCDB;
     display: flex;
     justify-content: Left;

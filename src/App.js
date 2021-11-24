@@ -17,7 +17,7 @@ function App() {
             <Header />
         </div>
       </div>
-      <div className="container" style={{ background: "peachpuff" }}>
+      <div className="container" style={{ background: "#2A324B" }}>
     </div>
     </div>
   );
