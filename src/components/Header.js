@@ -17,6 +17,6 @@ const Israel = styled.div`
     display: flex;
     align-items: left;
     justify-content: Left
-    margin-left: 0px;
+    margin-left: 20px;
     margin-right: 700px
 `
