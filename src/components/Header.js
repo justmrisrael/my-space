@@ -17,10 +17,11 @@ export default Header;
 const Home = styled.div`
   position: absolute;
   top: 100px;
+  margin-left: 5em;
+  margin-top: 5em;
 `;
 const TextContainer = styled.div`
   position: relative;
-  top: 0;
   a {
     font-family: "Geo";
     font-size: 4em;
@@ -29,7 +30,7 @@ const TextContainer = styled.div`
   }
 `;
 const StaticWords = styled.div`
-  position: flex;
+  margin-left: 1em;
   a {
       font-family: "Montserrat";
       font-size: 2em;
