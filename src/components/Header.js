@@ -11,7 +11,7 @@ export default Header
 
 
 const Home = styled.div`
-    display: flex;
+    position: relative;
     justify-content: Left;
     a {
         text-align: start;
