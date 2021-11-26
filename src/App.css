@@ -12,6 +12,11 @@
   src: url('./font/Nexa/NexaText-Trial-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./font/Montserrat/Montserrat-Regular.ttf');
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
