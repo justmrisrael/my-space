@@ -17,8 +17,8 @@ export default Header;
 const Home = styled.div`
   position: absolute;
   top: 100px;
-  margin-left: 5em;
-  margin-top: 5em;
+  margin-left: 2em;
+  margin-top: 2em;
 `;
 const TextContainer = styled.div`
   position: relative;
