@@ -7,7 +7,7 @@ function Body() {
         <a href="#">Israel Musa</a>
       </TextContainer>
       <StaticWords>
-          <a>I'm a front end developer & UX designer</a>
+          <a>I'm a Front end developer & UX designer..</a>
       </StaticWords>
     </Home>
   );
@@ -30,7 +30,7 @@ const TextContainer = styled.div`
 `;
 const StaticWords = styled.div`
   position: relative;
-  margin-left: 1em;
+  margin-left: 2em;
   a {
       font-family: "Montserrat";
       font-size: 1em;
