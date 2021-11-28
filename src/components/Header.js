@@ -5,13 +5,14 @@ function Header() {
   return (
     <NavBar>
       <Logo>
-        <a href="#">IM</a>
+        <a href="#">IM.</a>
       </Logo>
       <Menu>
         <a href="#">Home</a>
         <a href="#">Projects</a>
         <a href="#">Resume</a>
         <a href="#">Contact</a>
+        <a href="#">About</a>
       </Menu>
     </NavBar>
   );
@@ -19,7 +20,7 @@ function Header() {
 export default Header;
 
 const NavBar = styled.div`
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: space-between;
   top: 0; 
@@ -29,7 +30,7 @@ const NavBar = styled.div`
 `;
 const Logo = styled.div`
   position: relative;
-  border: 2px solid white;
+  border: 2px solid #e1e5ee;
   margin-top: 2em;
   margin-left: 2em;
   cursor: pointer;
@@ -49,8 +50,8 @@ const Menu = styled.div`
   margin-right: 1em;
 
   a {
-    font-family: "Helvetica Neue";
-    font-weight: bold;
+    font-family: "Montserrat";
+    font-weight: normal;
     color: #e1e5ee;
     text-transform: none;
     padding: 0 10px;
