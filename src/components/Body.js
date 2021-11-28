@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-function Header() {
+function Body() {
   return (
     <Home>
       <TextContainer>
@@ -12,7 +12,7 @@ function Header() {
     </Home>
   );
 }
-export default Header;
+export default Body;
 
 const Home = styled.div`
   position: absolute;
