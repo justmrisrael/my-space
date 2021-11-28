@@ -31,6 +31,7 @@ const NavBar = styled.div`
 const Logo = styled.div`
   position: relative;
   border: 2px solid #e1e5ee;
+  background-color: #282c34;
   margin-top: 2em;
   margin-left: 2em;
   cursor: pointer;
