@@ -5,9 +5,7 @@ function Header() {
   return (
     <NavBar>
         <Logo>
-      <a>
-        IM
-      </a>
+      <a href="#">IM</a>
       </Logo>
 
     </NavBar>
