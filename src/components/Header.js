@@ -27,7 +27,7 @@ const Logo = styled.div`
     a{
         font-family: "Geo";
         color: #E1E5EE;
-        font-size: 3em;
+        font-size: 2em;
         font-weight: normal;
     }
 `
