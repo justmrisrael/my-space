@@ -22,6 +22,7 @@ export default Header;
 const NavBar = styled.div`
   position: fixed;
   display: flex;
+  padding: 2em;
   justify-content: space-between;
   top: 0; 
   left: 0;
@@ -32,8 +33,6 @@ const Logo = styled.div`
   position: relative;
   border: 2px solid #e1e5ee;
   background-color: #282c34;
-  margin-top: 2em;
-  margin-left: 2em;
   cursor: pointer;
   a {
     font-family: "Geo";
@@ -48,7 +47,6 @@ const Menu = styled.div`
   align-items: center;
   justify-content: right;
   flex: 1;
-  margin-right: 1em;
 
   a {
     font-family: "Montserrat";
