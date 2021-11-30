@@ -21,9 +21,12 @@ export default Body;
 const Home = styled.div`
   position: absolute;
   width: 90%;
-  margin-left: 5%;
+  margin-left: 4%;
   top: 100px;
   margin-top: 4em;
+  @media (max-width: 768px) {
+    margin-left: 2%;
+  }
 `;
 const TextContainer = styled.div`
   display: flex;
