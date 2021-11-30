@@ -22,7 +22,7 @@ const StyledBurger = styled.div`
     width: 2rem;
     height: 0.25rem;
     background-color: ${({ open }) => open ? '#333' : '#C7CCDB'};
-    border-radius: 10px;
+    border-radius: 0;
     transform-origin: 1px;
     transition: all 0.3s linear;
 
