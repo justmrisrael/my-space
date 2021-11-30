@@ -43,13 +43,11 @@ const TextContainer = styled.div`
     text-align: left;
     color: #F7C59F;
   }
-
   @media (max-width: 768px) {
     a {
       font-family: "Geo";
       font-size: 3em;
       font-weight: normal;
-      color: #C7CCDB;
     }
   }
 `;
