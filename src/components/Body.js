@@ -35,6 +35,15 @@ const TextContainer = styled.div`
     font-weight: normal;
     color: #C7CCDB;
   }
+
+  @media (max-width: 768px) {
+    a {
+      font-family: "Geo";
+      font-size: 3em;
+      font-weight: normal;
+      color: #C7CCDB;
+    }
+  }
 `;
 const StaticWords = styled.div`
   display: flex;
@@ -44,6 +53,8 @@ const StaticWords = styled.div`
       font-size: 1em;
       color: #F7C59F;
   }
+
+}
 `
 const Tools = styled.div`
   display: block;

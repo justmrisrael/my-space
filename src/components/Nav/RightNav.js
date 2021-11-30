@@ -30,7 +30,7 @@ const Menu = styled.ul`
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #C7CCDB;
+    background-color: #767B91;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
@@ -38,7 +38,7 @@ const Menu = styled.ul`
     height: 100vh;
     width: 300px;
     padding-top: 3.5rem;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.6s ease-in-out;
 
     a {
       color: #000;
