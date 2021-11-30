@@ -9,6 +9,7 @@ const StyledBurger = styled.div`
   top: 22px;
   right: 20px;
   display: none;
+  z-index: 1;
   margin-top: 0;
 
   @media (max-width: 768px) {
@@ -32,11 +33,11 @@ const StyledBurger = styled.div`
     &:nth-child(2) {
       transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
       opacity: ${({ open }) => open ? 0 : 1};
+      width: 1.5rem;
     }
 
     &:nth-child(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
-      width: 1.5rem;
     }
   }
 `;
