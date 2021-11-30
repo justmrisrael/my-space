@@ -22,11 +22,16 @@ const Menu = styled.ul`
   padding-right: 1em;
 
   a {
-      font-family: "Montserrat";
+      font-family: "Gidole";
       padding: 18px 10px;
-      font-size: 1em;
+      font-size: 1.5em;
       color: #C7CCDB;
+      &:hover {
+        text-decoration: underline;
+      }
+      
   }
+  
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;

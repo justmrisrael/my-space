@@ -18,7 +18,7 @@ const Foot = styled.div`
   width: 100%;
   height: 30%;
   a{
-      font-family: "Nexa";
+      font-family: "Gidole";
       font-weight: normal;
       color: black;
   }

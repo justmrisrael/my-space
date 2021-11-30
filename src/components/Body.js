@@ -4,13 +4,13 @@ function Body() {
   return (
     <Home>
       <TextContainer>
-        <a href="#">Hey There! <br />
+        <a href="#">Hey there! <br />
         I'm Israel Musa.</a>
       </TextContainer>
 
       <StaticWords>
-          <a>I'm a Front End Developer & UX Designer<br />
-            who obsesses about creating aestheticly appealing web applications.<br />
+          <a>I'm a Front End Developer & UX Designer who<br />
+            obsesses about creating aestheticly appealing web applications.<br />
             Let's bring your ideas to life!
           </a>
       </StaticWords>
@@ -37,7 +37,7 @@ const TextContainer = styled.div`
   align-items: left;
   margin-left: 1em;
   a {
-    font-family: "Geo";
+    font-family: "Kollektif";
     font-size: 4em;
     font-weight: normal;
     text-align: left;
@@ -55,7 +55,7 @@ const StaticWords = styled.div`
   display: flex;
   margin-left: 1em;
   a {
-      font-family: "Montserrat";
+      font-family: "Gidole";
       font-size: 1.5em;
       color: white;
       text-align: left;

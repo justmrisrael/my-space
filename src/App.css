@@ -13,6 +13,16 @@
 }
 
 @font-face {
+  font-family: 'kollektif';
+  src: url(./font/kollektif/Kollektif-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Gidole';
+  src: url(./font/Gidole/Gidole-Regular.ttf);
+}
+
+@font-face {
   font-family: 'Montserrat';
   src: url('./font/Montserrat/Montserrat-Regular.ttf');
 }
