@@ -30,7 +30,7 @@ const NavBar = styled.div`
     color: #e1e5ee;
     font-size: 2em;
     left: 20px;
-    margin-top: 25px;
+    margin-top: 30px;
     margin-bottom: 1em;
   }
 `;
