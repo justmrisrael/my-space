@@ -45,7 +45,6 @@ const TextContainer = styled.div`
   }
   @media (max-width: 768px) {
     a {
-      font-family: "Geo";
       font-size: 3em;
       font-weight: normal;
     }
