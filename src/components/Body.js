@@ -4,11 +4,15 @@ function Body() {
   return (
     <Home>
       <TextContainer>
-        <a href="#">Israel Musa</a>
+        <a href="#">Hey There! <br />
+        I'm Israel Musa.</a>
       </TextContainer>
 
       <StaticWords>
-          <a>I'm a Front End Developer & UX Designer.</a>
+          <a>I'm a Front End Developer & UX Designer<br />
+            who obsesses about creating aestheticly appealing web applications.<br />
+            Let's bring your ideas to life!
+          </a>
       </StaticWords>
       <Tools>
       
@@ -36,7 +40,8 @@ const TextContainer = styled.div`
     font-family: "Geo";
     font-size: 4em;
     font-weight: normal;
-    color: #C7CCDB;
+    text-align: left;
+    color: #F7C59F;
   }
 
   @media (max-width: 768px) {
@@ -53,8 +58,10 @@ const StaticWords = styled.div`
   margin-left: 1em;
   a {
       font-family: "Montserrat";
-      font-size: 1em;
-      color: #F7C59F;
+      font-size: 1.5em;
+      color: white;
+      text-align: left;
+      line-height: 1.5em;
   }
 
 }
