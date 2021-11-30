@@ -61,6 +61,9 @@ const StaticWords = styled.div`
       text-align: left;
       line-height: 1.5em;
   }
+  @media (max-width: 768px) {
+    font-size: 1em;
+  }
 
 }
 `
