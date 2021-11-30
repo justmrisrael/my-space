@@ -8,7 +8,7 @@ function Body() {
       </TextContainer>
 
       <StaticWords>
-          <a>I'm a Front end developer & UX designer.</a>
+          <a>I'm a Front End Developer & UX Designer.</a>
       </StaticWords>
       <Tools>
       
