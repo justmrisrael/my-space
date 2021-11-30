@@ -5,13 +5,14 @@ import Body from "./components/Body";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { MouseContext } from "./context/mouse-context";
+import Burger from "./components/Nav/Burger"
 
 function App() {
   const { cursorChangeHandler } = useContext(MouseContext);
   return (
     <div className="App">
-      <DotRing />
       <Header />
+      <DotRing />
       <Body />
       <Footer />
       <div className="container">

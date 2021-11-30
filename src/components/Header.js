@@ -1,62 +1,37 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Burger from "./Nav/Burger"
 
-function Header() {
+const Header = () => {
   return (
     <NavBar>
-      <Logo>
-        <a href="#">IM.</a>
-      </Logo>
-      <Menu>
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Resume</a>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
-      </Menu>
+        <div className="logo">IM.</div>
+      <Burger />
     </NavBar>
-  );
+  )
 }
 export default Header;
 
 const NavBar = styled.div`
-  position: fixed;
+  width: 100%;
   display: flex;
-  padding: 2em;
+  padding: 0 0;
   justify-content: space-between;
   top: 0; 
   left: 0;
   right: 0;
   z-index: 1;
-`;
-const Logo = styled.div`
-  position: relative;
-  border: 2px solid #e1e5ee;
-  background-color: #282c34;
-  cursor: pointer;
-  a {
+
+  .logo {
+    position: relative; 
+    border: 2px solid #e1e5ee;
+    background-color: #282c34;
     font-family: "Geo";
     color: #e1e5ee;
     font-size: 2em;
-    font-weight: normal;
+    left: 20px;
+    margin-top: 25px;
+    margin-bottom: 1em;
   }
 `;
 
-const Menu = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  flex: 1;
-
-  a {
-    font-family: "Montserrat";
-    font-weight: normal;
-    color: #e1e5ee;
-    text-transform: none;
-    padding: 0 10px;
-    flex-wrap: nowrap;
-  }
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
