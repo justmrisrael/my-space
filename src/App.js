@@ -5,7 +5,6 @@ import Body from "./components/Body";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { MouseContext } from "./context/mouse-context";
-import Burger from "./components/Nav/Burger"
 
 function App() {
   const { cursorChangeHandler } = useContext(MouseContext);
@@ -15,14 +14,12 @@ function App() {
       <DotRing />
       <Body />
       <Footer />
-      <div className="container">
-        <div
-          onMouseEnter={() => cursorChangeHandler("hovered")}
-          onMouseLeave={() => cursorChangeHandler("")}
-        ></div>
-      </div>
+      <div
+        onMouseEnter={() => cursorChangeHandler("hovered")}
+        onMouseLeave={() => cursorChangeHandler("")}
+      ></div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

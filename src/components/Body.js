@@ -9,25 +9,31 @@ function Body() {
       </TextContainer>
 
       <StaticWords>
-          <a>I'm a Front End Developer & UX Designer who<br />
-            obsesses about creating aestheticly appealing web applications.<br />
+          <a>I'm a Front End Developer & UX Designer<br />
+            who obsesses about creating aestheticly appealing web applications.<br />
             Let's bring your ideas to life!
           </a>
       </StaticWords>
       <Tools>
-      
+        
       </Tools>
     </Home>
   );
 }
 export default Body;
+const Tools = styled.div`
+  background-color: white;
+  `
 
 const Home = styled.div`
-  position: absolute;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 90%;
+  padding-bottom: 58px;
   margin-left: 4%;
-  top: 100px;
   margin-top: 4em;
+
   @media (max-width: 768px) {
     margin-left: 2%;
   }
@@ -51,6 +57,7 @@ const TextContainer = styled.div`
   }
 `;
 const StaticWords = styled.div`
+  position: relative;
   display: flex;
   margin-left: 1em;
   a {
@@ -65,11 +72,4 @@ const StaticWords = styled.div`
   }
 
 }
-`
-const Tools = styled.div`
-  display: block;
-  position: absolute;
-  justify-items: center;
-  width: 100%;
-  height: 500px;
 `

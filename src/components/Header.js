@@ -5,7 +5,7 @@ import Burger from "./Nav/Burger"
 const Header = () => {
   return (
     <NavBar>
-        <div className="logo">IM.</div>
+        <div className="logo">IM_ </div>
       <Burger />
     </NavBar>
   )
@@ -30,7 +30,8 @@ const NavBar = styled.div`
     color: #e1e5ee;
     font-size: 2em;
     left: 20px;
-    margin-top: 20px;
+    padding: 1px;
+    margin-top: 30px;
     margin-bottom: 1em;
   }
 `;
