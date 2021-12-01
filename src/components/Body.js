@@ -116,7 +116,7 @@ const StaticWords = styled.div`
       line-height: 1.5em;
   }
   @media (max-width: 768px) {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
 }
