@@ -21,8 +21,11 @@ function Body({BtnText}) {
             </Bttn>
           </ButtonGroup>
       <Tools>
-          <a>Tools</a>
+          <h2>Projects</h2>
       </Tools>
+      <About>
+        <h2>About Me</h2>
+      </About>
     </Home>
   );
 }
@@ -33,10 +36,16 @@ const Tools = styled.div`
   margin-top: 30px;
   height: 800px;
   width: 100%;
+  `
+
+const About = styled.div`
+  margin-top: 30px;
+  height: 800px;
+  width: 100%;
   a{
     font-family: "Gidole";
   }
-  `
+`
 const ButtonGroup = styled.div`
   margin-top: 20px;
   display: flex;
@@ -48,7 +57,7 @@ const ButtonGroup = styled.div`
 const Bttn = styled.div`
     background-color: rgba(23, 26, 32, 0.8);
     height: 40px;
-    width: 256px;
+    width: 200px;
     color: white;
     display: flex;
     box-shadow: -5px 5px 0 #C7CCDB;
@@ -60,7 +69,7 @@ const Bttn = styled.div`
     font-size: 1em;
     font-family: "Gidole";
     cursor: pointer;
-    margin: 8px;
+    margin-left: 20px;
     
 
 `

@@ -88,9 +88,17 @@ a {
 
 h1 {
   color: #999999;
-  font-family: Geo;
-  font-size: 30px;
-  font-weight: bold;
+  font-family: Gidole;
+  font-size: 15px;
+  text-align: left;
+  font-weight: normal;
   margin-top: 0px;
   margin-bottom: 1px;
   }
+
+h2 {
+  color: #999999;
+  font-family: Gidole;
+  text-align: left;
+  margin-left: 1em;
+}

@@ -29,7 +29,6 @@ const Menu = styled.ul`
       &:hover {
         text-decoration: underline;
       }
-      
   }
   
 
