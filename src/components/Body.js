@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import React from 'react'
 
-function Body() {
+function Body({BtnText}) {
   return (
-    <Home>
+    <Home className="container">
       <TextContainer>
         <a href="#">Hey there! <br />
         I'm Israel Musa.</a>
@@ -14,17 +15,55 @@ function Body() {
             Let's bring your ideas to life!
           </a>
       </StaticWords>
+          <ButtonGroup>
+            <Bttn>
+              {BtnText}
+            </Bttn>
+          </ButtonGroup>
       <Tools>
-        
+          <a>Tools</a>
       </Tools>
     </Home>
   );
 }
 export default Body;
-const Tools = styled.div`
-  background-color: white;
-  `
 
+
+const Tools = styled.div`
+  margin-top: 30px;
+  height: 800px;
+  width: 100%;
+  a{
+    font-family: "Gidole";
+  }
+  `
+const ButtonGroup = styled.div`
+  margin-top: 20px;
+  display: flex;
+  margin-bottom: 30px;
+  @media (max-width: 768px){
+      flex-direction: column;
+  }
+`
+const Bttn = styled.div`
+    background-color: rgba(23, 26, 32, 0.8);
+    height: 40px;
+    width: 256px;
+    color: white;
+    display: flex;
+    box-shadow: -5px 5px 0 #C7CCDB;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    opacity: 1.85;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: "Gidole";
+    cursor: pointer;
+    margin: 8px;
+    
+
+`
 const Home = styled.div`
   position: relative;
   display: flex;
@@ -73,3 +112,4 @@ const StaticWords = styled.div`
 
 }
 `
+
