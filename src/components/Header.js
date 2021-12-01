@@ -21,18 +21,5 @@ const NavBar = styled.div`
   left: 0;
   right: 0;
   z-index: 1;
-
-  .logo {
-    position: relative; 
-    border: 2px solid #e1e5ee;
-    background-color: #282c34;
-    font-family: "Geo";
-    color: #e1e5ee;
-    font-size: 2em;
-    left: 20px;
-    padding: 1px;
-    margin-top: 30px;
-    margin-bottom: 1em;
-  }
 `;
 
