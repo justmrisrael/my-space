@@ -33,7 +33,6 @@ export default Body;
 
 
 const Tools = styled.div`
-  margin-top: 30px;
   height: 800px;
   width: 100%;
   `
@@ -84,6 +83,7 @@ const Home = styled.div`
 
   @media (max-width: 768px) {
     margin-left: 2%;
+    height: 2300px;
   }
 `;
 const TextContainer = styled.div`
