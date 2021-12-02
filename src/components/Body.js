@@ -5,7 +5,7 @@ function Body({BtnText}) {
   return (
     <Home className="container">
       <TextContainer>
-        <a href="#">Hey there! <br />
+        <a href="#">Hey there!<br />
         I'm Israel Musa.</a>
       </TextContainer>
 
@@ -20,7 +20,7 @@ function Body({BtnText}) {
               {BtnText}
             </Bttn>
           </ButtonGroup>
-      <Tools>
+      <Tools >
           <h2>Projects</h2>
       </Tools>
       <About>

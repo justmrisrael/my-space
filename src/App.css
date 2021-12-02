@@ -66,7 +66,7 @@
 .container {
   display: flex;
   width: 100%;
-  height: 2500px;
+  height: 2100px;
   justify-content: center;
   align-items: left;
 }
@@ -105,4 +105,51 @@ h2 {
   padding: 1px;
   margin-top: 30px;
   margin-bottom: 1em;
+}
+
+/************* line animation ********************/
+
+.line {
+  width: 100px;
+  height: 3px;
+  background: #999999;
+  top: 100%;
+}
+
+#line_r{
+-webkit-animation: line_r_animation 30s infinite;
+animation: line_r_animation 30s infinite;
+}
+
+#line_l{
+-webkit-animation: line_l_animation 3s infinite;
+animation: line_l_animation 3s infinite;
+}
+
+@-webkit-keyframes line_l_animation {
+  0%   {left: calc(2% + 50px); width: 0px;}
+  35%   {left: calc(2% + 0px); width: 50px;}
+  70%   {left: calc(2% + 0px); width: 0px;}
+  100%   {left: calc(2% + 0px); width: 0px;}
+}
+
+@keyframes line_r_animation {
+  0%   {left: calc(2% + 50px); width: 0px;}
+  35%   {left: calc(2% + 0px); width: 50px;}
+  70%   {left: calc(2% + 0px); width: 0px;}
+  100%   {left: calc(2% + 0px); width: 0px;}
+}
+
+@-webkit-keyframes line_r_animation {
+  0%   {right: calc(2% + 50px); width: 0px;}
+  35%   {right: calc(2% + 0px); width: 150px;}
+  70%   {right: calc(2% + 0px); width: 0px;}
+  100%   {right: calc(2% + 0px); width: 0px;}
+}
+
+@keyframes line_r_animation {
+  0%   {right: calc(2% + 50px); width: 0px;}
+  35%   {right: calc(2% + 0px); width: 150px;}
+  70%   {right: calc(2% + 0px); width: 0px;}
+  100%   {right: calc(2% + 0px); width: 0px;}
 }
