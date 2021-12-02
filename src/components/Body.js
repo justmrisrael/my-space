@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import React from 'react'
+import Sections from './Sections'
 
 function Body({BtnText}) {
   return (
@@ -20,11 +21,15 @@ function Body({BtnText}) {
               {BtnText}
             </Bttn>
           </ButtonGroup>
-      <Tools >
           <h2>Projects</h2>
-      </Tools>
+              <Tools >
+                <Sections/>
+                <Sections/>
+                <Sections/>
+              </Tools>
+          <h2>About Me</h2>
       <About>
-        <h2>About Me</h2>
+        
       </About>
     </Home>
   );
@@ -33,9 +38,15 @@ export default Body;
 
 
 const Tools = styled.div`
-  height: 800px;
+  height: auto;
   width: 100%;
-  `
+  align-items: left;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`
 
 const About = styled.div`
   margin-top: 30px;
@@ -62,11 +73,12 @@ const Bttn = styled.div`
     box-shadow: -5px 5px 0 #C7CCDB;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 10px;
     opacity: 1.85;
     text-transform: uppercase;
     font-size: 1em;
     font-family: "Gidole";
+    font-weight: solid;
     cursor: pointer;
     margin-left: 20px;
     
