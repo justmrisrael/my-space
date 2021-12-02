@@ -21,16 +21,17 @@ function Body({BtnText}) {
               {BtnText}
             </Bttn>
           </ButtonGroup>
-          <h2>Projects</h2>
-              <Tools >
-                <Sections/>
-                <Sections/>
-                <Sections/>
-              </Tools>
-          <h2>About Me</h2>
-      <About>
-        
-      </About>
+        <h2>About Me</h2>
+            <About>
+              
+            </About>
+        <h2>Projects</h2>
+            <Tools >
+              <Sections/>
+              <Sections/>
+              <Sections/>
+            </Tools>
+          
     </Home>
   );
 }
