@@ -17,7 +17,7 @@ function Body({BtnText}) {
           </a>
       </StaticWords>
           <ButtonGroup>
-            <Bttn>
+            <Bttn className="hvr-grow">
               {BtnText}
             </Bttn>
           </ButtonGroup>
@@ -71,7 +71,7 @@ const Bttn = styled.div`
     width: 200px;
     color: white;
     display: flex;
-    box-shadow: -5px 5px 0 #C7CCDB;
+    box-shadow: -5px 5px 0 #999999;
     justify-content: center;
     align-items: center;
     border-radius: 10px;

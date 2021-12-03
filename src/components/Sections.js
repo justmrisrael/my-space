@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Sections = () => {
     return (
         <div className="container">
-            <Gamble>
+            <Gamble className="hvr-grow">
 
             </Gamble>
         </div>
