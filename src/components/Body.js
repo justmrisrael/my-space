@@ -88,10 +88,5 @@ const Home = styled.div`
   position: relative;
   flex-direction: column;
   padding-bottom: 58px;
-  margin-left: 4%;
   margin-top: 20px;
-
-  @media (max-width: 768px) {
-    margin-left: 2%;
-  }
 `;
