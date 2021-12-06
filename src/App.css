@@ -3,7 +3,7 @@
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 2em;
 }
 
@@ -75,12 +75,12 @@ line {
 
 h1{
     font-family: "Kollektif";
-    font-size: 4em;
+    font-size: 8vw;
     font-weight: normal;
     text-align: left;
     color: #E1E5EE;
     margin: 20px 0 0;
-    max-width: 950px;
+    max-width: 1050px;
 }
 h2{
   color: #999999;
@@ -101,7 +101,7 @@ h5 {
 h3 {
   font-family: Gidole;
   text-align: left;
-  font-size: 1.5em;
+  font-size: 20px;
   margin: 0 0 0;
   font-weight: normal;
   color: #F7C59F;
@@ -111,8 +111,8 @@ h4 {
   color: #999999;
   font-family: Gidole;
   text-align: left;
-  font-size: 1.5em;
-  margin: 0 0 0;
+  font-size: 20px;
+  margin: 20px 0 0;
   font-weight: normal;
 }
 
