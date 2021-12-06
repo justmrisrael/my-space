@@ -38,9 +38,10 @@ const Menu = styled.ul`
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
+    z-index: 16;
     height: 100vh;
-    width: 300px;
-    padding-top: 3.5rem;
+    width: 350px;
+    padding-top: 5rem;
     transition: transform 0.6s ease-in-out;
 
     a {

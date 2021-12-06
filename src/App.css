@@ -70,7 +70,7 @@ line {
   border-bottom: 1px solid #999999;
   width: 50px;
   line-height: 0.1em;
-  margin: 50px 20px 13px;
+  margin: 10px 20px 10px;
 }
 
 h1{
@@ -102,7 +102,7 @@ h3 {
   font-family: Gidole;
   text-align: left;
   font-size: 1.5em;
-  margin: 40px 0 0;
+  margin: 0 0 0;
   font-weight: normal;
   color: #F7C59F;
 }

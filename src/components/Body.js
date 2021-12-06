@@ -14,7 +14,7 @@ function Body({ BtnText }) {
         <h1>I'm a Front-end Developer and UI/UX Designer</h1>
         <Intro>
           <h4>
-            Enthusiastic and innovative developer with a focus on developing
+            An enthusiastic and innovative developer, with a focus on developing
             visually aesthetic front-end for web applications.
           </h4>
         </Intro>
