@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer">
       <Foot>
         <Menu>
-          <h1>Links</h1><br/>
+          <h5>Links</h5><br/>
           <a href="https://github.com/justmrisrael/" target="_blank">Github </a>
           <a href="https://www.linkedin.com/in/israel-musa-8b8758173/" target="_blank">LinkedIn </a>
           <a href="./resume/Israel_ Musa_resume.pdf">Resumé </a>

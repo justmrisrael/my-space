@@ -7,7 +7,6 @@ const RightNav = ({ open }) => {
         <a href="#">Home</a>
         <a href="#">Projects</a>
         <a href="./resume/Israel_ Musa_resume.pdf">Resumé</a>
-        <a href="#">Contact</a>
         <a href="#">About</a>
     </Menu>
     )
