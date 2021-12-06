@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import React from "react";
-import Sections from "./Sections";
+import styled from "styled-components"
+import React from "react"
+import Sections from "./Sections"
 
 function Body({ BtnText }) {
   return (
@@ -23,28 +23,34 @@ function Body({ BtnText }) {
           <Bttn className="hvr-grow">{BtnText}</Bttn>
         </ButtonGroup>
       </Name>
+      <About className="main">
       <h2>About Me</h2>
-      <About className="main"></About>
+      </About>
       <h2>Projects</h2>
-      <Tools>
+      <Tools className="main">
         <Sections />
         <Sections />
         <Sections />
       </Tools>
     </Home>
-  );
+  )
 }
 export default Body;
 const Intro = styled.div`
   max-width: 750px;
-`;
+`
 const Ava = styled.div`
   display: flex;
   max-width: 950px;
-  
-`;
+`
 
-const Name = styled.div``;
+const Name = styled.div`
+  bottom: 0;
+  padding: 0 4em 0;
+  @media (max-width: 768px) {
+    padding: 0 2em 0;
+  }
+`
 
 const Tools = styled.div`
   align-items: left;
@@ -53,20 +59,20 @@ const Tools = styled.div`
   @media (max-width: 768px) {
       flex-direction: column;
   }
-`;
+`
 
 const About = styled.div`
   a {
     font-family: "Gidole";
   }
-`;
+`
 const ButtonGroup = styled.div`
   margin-top: 20px;
   display: flex;
   @media (max-width: 768px) {
     flex-direction: column;
   }
-`;
+`
 const Bttn = styled.div`
   background-color: #282c34;
   height: 60px;
@@ -83,10 +89,10 @@ const Bttn = styled.div`
   font-family: "Gidole";
   font-weight: solid;
   cursor: pointer;
-`;
+`
 const Home = styled.div`
   position: relative;
   flex-direction: column;
   padding-bottom: 58px;
   margin-top: 20px;
-`;
+`

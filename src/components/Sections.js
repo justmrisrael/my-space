@@ -18,8 +18,8 @@ const Gamble = styled.div`
     border-bottom: 25px solid #999999;
     border-radius: 3px;
     margin: 10px;
-    width: 300px;
-    height: 300px;
+    min-width: 300px;
+    min-height: 300px;
     align-items: left;
     box-shadow: -10px 10px 10px #000;
 `
