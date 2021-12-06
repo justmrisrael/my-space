@@ -18,7 +18,6 @@ const NavBar = styled.div`
   padding: 0 0;
   justify-content: space-between;
   top: 0; 
-  left: 0;
   right: 0;
   z-index: 1;
 `;

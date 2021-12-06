@@ -41,6 +41,7 @@ const Intro = styled.div`
 const Ava = styled.div`
   display: flex;
   max-width: 950px;
+  
 `;
 
 const Name = styled.div``;
@@ -74,7 +75,6 @@ const Bttn = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 1.85;
   border-style: solid;
   border-width: 1px;
   border-color: white;
