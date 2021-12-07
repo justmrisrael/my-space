@@ -25,6 +25,16 @@ function Body({ BtnText }) {
       </Name>
       <About className="main">
       <h2>About Me</h2>
+      <Story>
+        <h3>INTRODUCTION</h3>
+        <p>At the age of 16, I was introduced to coding and learned to create mobile websites.
+           I also found photography and filmmaking, which allow me to convey my artistic vision.
+            Today, I use my aesthetic sense and web application design skills to develop aesthetically
+             appealing, device-responsive, and fast-loading digital environments.
+        </p>
+        <h3>RECENTLY</h3>
+        <p>I am working on my portfolio...</p>
+      </Story>
       </About>
       <h2>Projects</h2>
       <Tools className="main">
@@ -35,7 +45,26 @@ function Body({ BtnText }) {
     </Home>
   )
 }
-export default Body;
+export default Body
+
+
+const Story = styled.div`
+  background-color: #999999;
+  height: 100%;
+  width: 100%;
+  box-shadow: 10px 10px 10px #000;
+  padding: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  p{
+    font-size: 2.5vw;
+    font-family: "Gidole";
+    color: #000;
+    text-align: left;
+    line-height: 1.8;
+  }
+`
 const Intro = styled.div`
   max-width: 750px;
 `
