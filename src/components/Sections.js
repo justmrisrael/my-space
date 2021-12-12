@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 const Sections = () => {
     return (
-        <a href="https://israelmusa.netlify.app"><div className="container" >
-            <Gamble className="hvr-grow">
+        <div className="container" >
+            <Gamble>
 
             </Gamble>
-        </div></a>
+        </div>
     )
 }
 
@@ -15,11 +15,11 @@ export default Sections
 
 const Gamble = styled.div`
     border: 2px solid #999999;
-    border-bottom: 25px solid #999999;
-    border-radius: 3px;
-    margin: 10px;
-    min-width: 300px;
-    min-height: 300px;
+    border-top: 50px solid #999999;
+    border-radius: 2px;
+    margin: 20px 0 20px;
+    width: 100%;
+    min-height: 500px;
     align-items: left;
     box-shadow: -10px 10px 10px #000;
 `

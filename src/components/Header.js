@@ -5,7 +5,7 @@ import Burger from "./Nav/Burger"
 const Header = () => {
   return (
     <NavBar>
-        <div className="logo">IM_ </div>
+        <a href="https://israelmusa.netlify.app"><div className="logo hvr-grow">IM_ </div></a>
       <Burger />
     </NavBar>
   )
@@ -20,5 +20,5 @@ const NavBar = styled.div`
   top: 0; 
   right: 0;
   z-index: 1;
-`;
+`
 

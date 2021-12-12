@@ -26,19 +26,18 @@ function Body({ BtnText }) {
       <About className="main">
       <h2>About Me</h2>
       <Story>
-        <h3>INTRODUCTION</h3>
-        <p>At the age of 16, I was introduced to coding and learned to create mobile websites.
+        <p><h3>INTRODUCTION</h3>At the age of 16, I was introduced to coding and learned to create mobile websites.
            I also found photography and filmmaking, which allow me to convey my artistic vision.
             Today, I use my aesthetic sense and web application design skills to develop aesthetically
              appealing, device-responsive, and fast-loading digital environments.
         </p>
-        <h3>RECENTLY</h3>
-        <p>I am working on my portfolio</p>
+        
+        <p><h3>RECENTLY</h3>I am working on my portfolio</p>
       </Story>
       </About>
-      <h2>Projects</h2>
+      
       <Tools className="main">
-        <Sections />
+      <h2>Projects</h2>
         <Sections />
         <Sections />
       </Tools>
@@ -53,7 +52,6 @@ const Story = styled.div`
   height: 100%;
   width: 100%;
   box-shadow: 10px 10px 10px #000;
-  
   border-style: solid;
   border-width: 1px;
   border-color: white;
@@ -86,9 +84,7 @@ const Tools = styled.div`
   align-items: left;
   justify-content: space-between;
   display: flex;
-  @media (max-width: 768px) {
-      flex-direction: column;
-  }
+  flex-direction: column;
 `
 
 const About = styled.div`
