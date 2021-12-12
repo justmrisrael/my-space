@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 const Sections = () => {
     return (
-        <div className="container">
+        <a href="https://israelmusa.netlify.app"><div className="container" >
             <Gamble className="hvr-grow">
 
             </Gamble>
-        </div>
+        </div></a>
     )
 }
 

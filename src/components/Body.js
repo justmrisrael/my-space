@@ -33,7 +33,7 @@ function Body({ BtnText }) {
              appealing, device-responsive, and fast-loading digital environments.
         </p>
         <h3>RECENTLY</h3>
-        <p>I am working on my portfolio...</p>
+        <p>I am working on my portfolio</p>
       </Story>
       </About>
       <h2>Projects</h2>
@@ -53,11 +53,12 @@ const Story = styled.div`
   height: 100%;
   width: 100%;
   box-shadow: 10px 10px 10px #000;
-  padding: 30px;
+  
   border-style: solid;
   border-width: 1px;
   border-color: white;
   p{
+    padding: 0 40px 0;
     font-size: 2.5vw;
     font-family: "Gidole";
     color: #000;

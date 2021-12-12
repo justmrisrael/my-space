@@ -89,15 +89,6 @@ h2{
   font-size: 3em;
   text-align: left;
 }
-h5 {
-  color: #999999;
-  font-family: Gidole;
-  font-size: 15px;
-  text-align: left;
-  font-weight: normal;
-  margin-top: 0px;
-  margin-bottom: 1px;
-  }
 
 h3 {
   font-family: Gidole;
@@ -116,6 +107,16 @@ h4 {
   margin: 20px 0 0;
   font-weight: normal;
 }
+
+h5 {
+  color: #999999;
+  font-family: Gidole;
+  font-size: 15px;
+  text-align: left;
+  font-weight: normal;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  }
 
 .logo {
   position: relative; 
