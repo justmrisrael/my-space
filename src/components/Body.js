@@ -62,6 +62,11 @@ const Intro = styled.div`
 const Ava = styled.div`
   display: flex;
   max-width: 950px;
+  @media (max-width: 768px) {
+    h1{
+      font-size: 12vw;
+    }
+  }
 `
 
 const Name = styled.div`
