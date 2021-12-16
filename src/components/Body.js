@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import React from "react"
 import Sections from "./Sections"
+import Value from "./Value"
 
 function Body({ BtnText }) {
   return (
@@ -23,21 +24,25 @@ function Body({ BtnText }) {
           <Bttn className="hvr-grow">{BtnText}</Bttn>
         </ButtonGroup>
       </Name>
-      <About className="main">
-      <h2>About Me</h2>
-      <Story>
-        <p><h3>INTRODUCTION</h3>At the age of 16, I was introduced to coding and learned to create mobile websites.
-           I also found photography and filmmaking, which allow me to convey my artistic vision.
-            Today, I use my aesthetic sense and web application design skills to develop aesthetically
-             appealing, device-responsive, and fast-loading digital environments.
-        </p>
-        
-        <p><h3>RECENTLY</h3>I am working on my portfolio</p>
-      </Story>
-      </About>
-      
+
+      <Value />
+
+    <About className="main">
+    <h1>About Me</h1>
+      <div className="block">
+          <h4><h3>INTRODUCTION</h3>Hello! my name is Israel and I build products for the web. 
+            At the age of 16, I was introduced to coding and learned to create mobile websites.
+            I also found photography and filmmaking, which allow me to convey my artistic vision.
+            <br/>Today, I use my aesthetic sense and web application design skills to develop aesthetically
+              appealing, device-responsive, and fast-loading digital environments.
+          </h4>
+          
+          </div>
+        <div></div>
+    </About>
+
       <Tools className="main">
-      <h2>Projects</h2>
+      <h1>Projects</h1>
         <Sections />
         <Sections />
       </Tools>
@@ -46,24 +51,6 @@ function Body({ BtnText }) {
 }
 export default Body
 
-
-const Story = styled.div`
-  background-color: #999999;
-  height: 100%;
-  width: 100%;
-  box-shadow: 10px 10px 10px #000;
-  border-style: solid;
-  border-width: 1px;
-  border-color: white;
-  p{
-    padding: 0 40px 0;
-    font-size: 2.5vw;
-    font-family: "Gidole";
-    color: #000;
-    text-align: left;
-    line-height: 1.8;
-  }
-`
 const Intro = styled.div`
   max-width: 750px;
 `
@@ -88,8 +75,19 @@ const Tools = styled.div`
 `
 
 const About = styled.div`
-  a {
-    font-family: "Gidole";
+  display: flex;
+  flex-direction: row;
+  li{
+    align-items: left;
+    list-style-type: circle;
+  }
+  h3{
+    color: #7D827D;
+    font-size: 30px;
+    padding: 0 0 20px;
+  }
+  h4{
+    padding: 0 3em 0;
   }
 `
 const ButtonGroup = styled.div`
@@ -100,19 +98,19 @@ const ButtonGroup = styled.div`
   }
 `
 const Bttn = styled.div`
-  background-color: #282c34;
+  background-color: #2A2B2A;
   height: 60px;
   width: 300px;
-  color: white;
+  color: #7D827D;
   display: flex;
   justify-content: center;
   align-items: center;
   border-style: solid;
   border-width: 1px;
-  border-color: white;
+  border-color: #7D827D;
   text-transform: uppercase;
   font-size: 1em;
-  font-family: "Gidole";
+  font-family: "Fira";
   font-weight: solid;
   cursor: pointer;
 `

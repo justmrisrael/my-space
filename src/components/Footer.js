@@ -38,6 +38,7 @@ const Menu = styled.div`
   a{
     font-weight: bold;
     text-align: left;
+    color: #7D827D;
     &:hover {
       text-decoration: underline;
     }
@@ -58,6 +59,8 @@ const Btt = styled.div`
   a{
     font-weight: bold;
     text-align: right;
+    color: #7D827D;
+
   }
   @media (max-width: 768px) {
     padding-right: 15%;

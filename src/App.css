@@ -4,12 +4,23 @@
 
 .main {
   min-height: 80vh;
-  padding: 2em;
+  padding: 0 5em 0;
+  margin: 10px;
 }
-
+/* font families */
 @font-face {
   font-family: 'Geo';
   src: url('./font/Geo/Geo-Regular.ttf');
+}
+
+@font-face{
+  font-family: 'Fira';
+  src: url('./font/Fira_Code/FiraCode-VariableFont_wght.ttf');
+}
+
+@font-face{
+  font-family: 'Bebas';
+  src: url('./font/Bebas_Neue/BebasNeue-Regular.ttf');
 }
 
 @font-face {
@@ -49,10 +60,10 @@
   width: 100%;
   padding: 80px 0;
   align-items: center;
-  background-color: #E1E5EE;
-  color: #282c34;
+  background-color: #060606;
+  color: #7D827D;
   text-align: center;
-  font-family: "Gidole";
+  font-family: "Fira";
 }
 
 .container {
@@ -72,58 +83,69 @@ line {
   line-height: 0.1em;
   margin: 10px 20px 10px;
 }
-  
 
 h1{
-    font-family: "Kollektif";
-    font-size: 8vw;
+    font-family: Bebas;
+    font-size: 7vw;
     font-weight: normal;
     text-align: left;
-    color: #E1E5EE;
+    color: #565856;
     margin: 20px 0 0;
     max-width: 1050px;
+    /* E1E5EE */
 }
 h2{
-  color: #999999;
-  font-family: Gidole;
+  color: #7D827D;
+  font-family: Fira;
   font-size: 3em;
   text-align: left;
+  text-transform: uppercase;
 }
 
 h3 {
-  font-family: Gidole;
+  font-family: Fira;
   text-align: left;
   font-size: 20px;
   margin: 0 0 0;
   font-weight: normal;
-  color: #F7C59F;
+  color: #565856;
+  text-transform: uppercase;
 }
 
 h4 {
   color: #999999;
-  font-family: Gidole;
+  font-family: Fira;
   text-align: left;
+  line-height: 1.5em;
   font-size: 20px;
   margin: 20px 0 0;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 h5 {
   color: #999999;
-  font-family: Gidole;
+  font-family: Fira;
   font-size: 15px;
   text-align: left;
   font-weight: normal;
   margin-top: 0px;
   margin-bottom: 1px;
-  }
+}
+
+ .block {
+  min-height: 450px;
+  width: 100%;
+  margin: 30px;
+  align-items: left;
+}
 
 .logo {
   position: relative; 
-  border: 2px solid #e1e5ee;
-  background-color: #282c34;
+  border: 2px solid #7D827D;
+  background-color: #2A2B2A;
   font-family: "Geo";
-  color: #e1e5ee;
+  color: #7D827D;
   font-size: 2em;
   left: 30px;
   padding: 1px;
@@ -147,49 +169,30 @@ h5 {
   transform: scale(1.1);
 }
 
-/************* line animation ********************/
+/*************text animation********************/
 
-.line {
-  width: 100px;
-  height: 3px;
-  background: #999999;
-  top: 100%;
+/* Safari 4.0 - 8.0 */
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
 }
 
-#line_r{
--webkit-animation: line_r_animation 30s infinite;
-animation: line_r_animation 30s infinite;
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 10s linear infinite;
 }
 
-#line_l{
--webkit-animation: line_l_animation 3s infinite;
-animation: line_l_animation 3s infinite;
+.marquee p {
+  display: inline-block;
 }
 
-@-webkit-keyframes line_l_animation {
-  0%   {left: calc(2% + 50px); width: 0px;}
-  35%   {left: calc(2% + 0px); width: 50px;}
-  70%   {left: calc(2% + 0px); width: 0px;}
-  100%   {left: calc(2% + 0px); width: 0px;}
-}
-
-@keyframes line_r_animation {
-  0%   {left: calc(2% + 50px); width: 0px;}
-  35%   {left: calc(2% + 0px); width: 50px;}
-  70%   {left: calc(2% + 0px); width: 0px;}
-  100%   {left: calc(2% + 0px); width: 0px;}
-}
-
-@-webkit-keyframes line_r_animation {
-  0%   {right: calc(2% + 50px); width: 0px;}
-  35%   {right: calc(2% + 0px); width: 150px;}
-  70%   {right: calc(2% + 0px); width: 0px;}
-  100%   {right: calc(2% + 0px); width: 0px;}
-}
-
-@keyframes line_r_animation {
-  0%   {right: calc(2% + 50px); width: 0px;}
-  35%   {right: calc(2% + 0px); width: 150px;}
-  70%   {right: calc(2% + 0px); width: 0px;}
-  100%   {right: calc(2% + 0px); width: 0px;}
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
 }

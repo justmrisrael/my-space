@@ -21,5 +21,4 @@ const Gamble = styled.div`
     width: 100%;
     min-height: 500px;
     align-items: left;
-    box-shadow: -10px 10px 10px #000;
 `

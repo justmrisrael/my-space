@@ -21,10 +21,11 @@ const Menu = styled.ul`
   padding-right: 1em;
 
   a {
-      font-family: "Gidole";
+      font-family: Fira;
+      text-transform: uppercase;
       padding: 18px 10px;
-      font-size: 1.5em;
-      color: #C7CCDB;
+      font-size: 1.2em;
+      color: #7D827D;
       &:hover {
         text-decoration: underline;
       }
@@ -33,7 +34,7 @@ const Menu = styled.ul`
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #767B91;
+    background-color: #7D827D;
     position: fixed;
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;

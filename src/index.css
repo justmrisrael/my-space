@@ -8,9 +8,9 @@ body{
   width: 100%;
   overflow-x: hidden;
   min-height: 100vh;
-  background-color: #282c34;
+  background-color: #2A2B2A;
 }
-
+/* 282c34 */
 * {
   cursor: none;
 }
