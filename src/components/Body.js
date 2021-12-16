@@ -6,11 +6,9 @@ import Value from "./Value"
 export default function Body({ BtnText }) {
   return (
     <Home>
-      <Name className="main">
+      <Name className="section">
         <Ava>
-          <h3>I'm Israel Musa</h3>
-          <line />
-          <h3> Available for hire.</h3>
+          <h3>I'm Israel Musa // Available for hire.</h3>
         </Ava>
         <h1>I'm a Front-end Developer and UI/UX Designer</h1>
         <Intro>
@@ -26,7 +24,7 @@ export default function Body({ BtnText }) {
         <DownArrow src="./images/down-arrow.svg" />
       </Name>
       
-    <About className="main">
+    <About className="section">
         <h1>About Me -</h1>
         <div className="block">
             <h4><h3>INTRODUCTION</h3>Hello! my name is Israel and I build products for the web. 
@@ -40,7 +38,7 @@ export default function Body({ BtnText }) {
 
     <Value />
 
-      <Tools className="main">
+      <Tools className="section">
         <h1>Projects -</h1>
           <Sections />
           <Sections />
@@ -50,64 +48,32 @@ export default function Body({ BtnText }) {
 }
 
 const DownArrow = styled.img`
-    height: 50px;
-    bottom: 0;
+    height: 40px;
+    padding: 30px 0 30px;
+    left: 50%;
     overflow-x: hidden;
     animation: animateDown infinite 1.5s;
 `
 
-
-const Intro = styled.div`
-  max-width: 750px;
+const Name = styled.div`
+  position: relative;
+  padding-top: 7em;
+  margin-left: 3em;
   @media (max-width: 768px) {
-    h4{
+    padding-left: 0;
+    margin-left: 1em;
+  }
+`
+
+const Ava = styled.div`
+  display: flex;
+  @media (max-width: 768px) {
+    h3{
       font-size: 15px;
     }
   }
 `
-const Ava = styled.div`
-  display: flex;
-  max-width: 950px;
-  @media (max-width: 768px) {
-    h1{
-      font-size: 12vw;
-    }
-  }
-`
-
-const Name = styled.div`
-  bottom: 0;
-  padding: 0 4em 0;
-  @media (max-width: 768px) {
-    padding: 0 2em 0;
-  }
-`
-
-const Tools = styled.div`
-  align-items: left;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-`
-
-const About = styled.div`
-  display: flex;
-  flex-direction: row;
-  li{
-    align-items: left;
-    list-style-type: circle;
-  }
-  h3{
-    color: #7D827D;
-    font-size: 30px;
-    padding: 0 0 20px;
-  }
-  h4{
-    padding: 0 3em 0;
-  }
-`
 const ButtonGroup = styled.div`
-  margin-top: 20px;
   display: flex;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -130,9 +96,29 @@ const Bttn = styled.div`
   font-weight: solid;
   cursor: pointer;
 `
+
+const Intro = styled.div`
+  max-width: 750px;
+  @media (max-width: 768px) {
+    h4{
+      font-size: 15px;
+    }
+  }
+`
+
+const Tools = styled.div`
+  align-items: left;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+`
+
+const About = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
 const Home = styled.div`
-  position: relative;
   flex-direction: column;
   padding-bottom: 58px;
-  margin-top: 20px;
 `

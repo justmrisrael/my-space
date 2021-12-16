@@ -27,7 +27,6 @@ const Values = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    overflow: hidden;
     h1{
         min-width: 100%;
     }

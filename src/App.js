@@ -12,10 +12,9 @@ function App() {
     <div className="App">
       <Header />
       <DotRing />
-      <Body 
-        BtnText = "Contact Me"
-      />
+      <Body BtnText = "Contact Me"/>
       <Footer />
+
       <div
         onMouseEnter={() => cursorChangeHandler("hovered")}
         onMouseLeave={() => cursorChangeHandler("")}

@@ -18,7 +18,7 @@ const Menu = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  padding-right: 1em;
+  padding-right: 3em;
 
   a {
       font-family: Fira;

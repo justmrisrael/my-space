@@ -1,12 +1,26 @@
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
 }
 
-.main {
-  min-height: 80vh;
-  padding: 0 3em 3em;
-  margin: 10px;  
+.container {
+  width: 100%;
+  height: 100%;
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
 }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 1px; 
+  scroll-snap-align: start;
+}
+
 /* font families */
 @font-face {
   font-family: 'Geo';
@@ -28,15 +42,6 @@
   src: url('./font/Nexa/NexaText-Trial-Regular.ttf');
 }
 
-@font-face {
-  font-family: 'kollektif';
-  src: url(./font/kollektif/Kollektif-Bold.ttf);
-}
-
-@font-face {
-  font-family: 'Gidole';
-  src: url(./font/Gidole/Gidole-Regular.ttf);
-}
 
 @font-face {
   font-family: 'Montserrat';
@@ -66,13 +71,6 @@
   font-family: "Fira";
 }
 
-.container {
-  width: 100%;
-  justify-content: center;
-  align-items: left;
-  position: relative;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -91,10 +89,10 @@ h1{
     font-weight: normal;
     text-align: left;
     color: #565856;
-    margin: 20px 0 0;
     max-width: 1050px;
-    /* E1E5EE */
+    margin: 0;
 }
+
 h2{
   color: #7D827D;
   font-family: Fira;
@@ -107,7 +105,6 @@ h3 {
   font-family: Fira;
   text-align: left;
   font-size: 20px;
-  margin: 0 0 0;
   font-weight: normal;
   color: #565856;
   text-transform: uppercase;
@@ -119,7 +116,6 @@ h4 {
   text-align: left;
   line-height: 1.5em;
   font-size: 20px;
-  margin: 20px 0 0;
   font-weight: normal;
   text-transform: uppercase;
 }
