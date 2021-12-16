@@ -3,7 +3,7 @@ import React from "react"
 import Sections from "./Sections"
 import Value from "./Value"
 
-function Body({ BtnText }) {
+export default function Body({ BtnText }) {
   return (
     <Home>
       <Name className="main">
@@ -23,33 +23,39 @@ function Body({ BtnText }) {
         <ButtonGroup>
           <Bttn className="hvr-grow">{BtnText}</Bttn>
         </ButtonGroup>
+        <DownArrow src="./images/down-arrow.svg" />
       </Name>
-
-      <Value />
-
+      
     <About className="main">
-    <h1>About Me</h1>
-      <div className="block">
-          <h4><h3>INTRODUCTION</h3>Hello! my name is Israel and I build products for the web. 
-            At the age of 16, I was introduced to coding and learned to create mobile websites.
-            I also found photography and filmmaking, which allow me to convey my artistic vision.
-            <br/>Today, I use my aesthetic sense and web application design skills to develop aesthetically
-              appealing, device-responsive, and fast-loading digital environments.
-          </h4>
-          
-          </div>
-        <div></div>
+        <h1>About Me -</h1>
+        <div className="block">
+            <h4><h3>INTRODUCTION</h3>Hello! my name is Israel and I build products for the web. 
+              At the age of 16, I was introduced to coding and learned to create mobile websites.
+              I also found photography and filmmaking, which allow me to convey my artistic vision.
+              <br/>Today, I use my aesthetic sense and web application design skills to develop aesthetically
+                appealing, device-responsive, and fast-loading digital environments.
+            </h4>
+        </div>
     </About>
 
+    <Value />
+
       <Tools className="main">
-      <h1>Projects</h1>
-        <Sections />
-        <Sections />
+        <h1>Projects -</h1>
+          <Sections />
+          <Sections />
       </Tools>
     </Home>
   )
 }
-export default Body
+
+const DownArrow = styled.img`
+    height: 50px;
+    bottom: 0;
+    overflow-x: hidden;
+    animation: animateDown infinite 1.5s;
+`
+
 
 const Intro = styled.div`
   max-width: 750px;

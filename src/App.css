@@ -4,9 +4,8 @@
 
 .main {
   min-height: 80vh;
-  padding: 0 3em 0;
-  margin: 10px;
-  
+  padding: 0 3em 3em;
+  margin: 10px;  
 }
 /* font families */
 @font-face {
@@ -71,6 +70,7 @@
   width: 100%;
   justify-content: center;
   align-items: left;
+  position: relative;
 }
 
 a {
@@ -87,7 +87,7 @@ line {
 
 h1{
     font-family: Bebas;
-    font-size: 7vw;
+    font-size: 8vw;
     font-weight: normal;
     text-align: left;
     color: #565856;

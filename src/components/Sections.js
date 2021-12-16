@@ -5,7 +5,8 @@ const Sections = () => {
     return (
         <div className="container" >
             <Gamble>
-
+                <div> </div>
+                <div> </div>
             </Gamble>
         </div>
     )
@@ -21,4 +22,15 @@ const Gamble = styled.div`
     width: 100%;
     min-height: 500px;
     align-items: left;
+    display: flex;
+    flex-direction: row;
+    
+    div{
+        background-color: #363434;
+        width: 100%;
+        height: 100&;
+        margin: 10px 10px 10px;
+    }
+
 `
+// 363434
