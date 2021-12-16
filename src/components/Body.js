@@ -5,7 +5,7 @@ import Value from "./Value"
 
 export default function Body({ BtnText }) {
   return (
-    <Home>
+    <Home className="container">
       <Name className="section">
         <Ava>
           <h3>I'm Israel Musa // Available for hire.</h3>
@@ -116,6 +116,11 @@ const Tools = styled.div`
 const About = styled.div`
   display: flex;
   flex-direction: row;
+  margin-left: 3em;
+  @media (max-width: 768px) {
+    padding-left: 0;
+    margin-left: 1em;
+  }
 `
 
 const Home = styled.div`

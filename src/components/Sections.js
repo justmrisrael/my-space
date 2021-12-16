@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Sections = () => {
     return (
-        <div className="container" >
+        <div>
             <Gamble>
                 <div> </div>
                 <div> </div>
@@ -24,13 +24,10 @@ const Gamble = styled.div`
     align-items: left;
     display: flex;
     flex-direction: row;
-    
     div{
         background-color: #363434;
         width: 100%;
-        height: 100&;
+        height: 100%;
         margin: 10px 10px 10px;
     }
-
 `
-// 363434

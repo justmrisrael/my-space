@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const Value = () => {
     return (
-        <Values className="main">
+        <Values className="section">
             <div>
             <h4>Product Build Tools</h4>
                 <div>
