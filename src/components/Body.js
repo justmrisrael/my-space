@@ -2,12 +2,15 @@ import styled from "styled-components"
 import React from "react"
 import Sections from "./Sections"
 import Value from "./Value"
+import Header from "./Header";
+
 
 export default function Body({ BtnText }) {
   return (
     <Home className="container">
       <Name className="section">
-        <Ava>
+      <Header />
+        <a><Ava>
           <h3>I'm Israel Musa // Available for hire.</h3>
         </Ava>
         <h1>I'm a Front-end Developer and UI/UX Designer</h1>
@@ -20,12 +23,12 @@ export default function Body({ BtnText }) {
 
         <ButtonGroup>
           <Bttn className="hvr-grow">{BtnText}</Bttn>
-        </ButtonGroup>
+        </ButtonGroup></a>
         <DownArrow src="./images/down-arrow.svg" />
       </Name>
       
     <About className="section">
-        <h1>About Me -</h1>
+        <a><h1>About Me -</h1>
         <div className="block">
             <h4><h3>INTRODUCTION</h3>Hello! my name is Israel and I build products for the web. 
               At the age of 16, I was introduced to coding and learned to create mobile websites.
@@ -33,7 +36,7 @@ export default function Body({ BtnText }) {
               <br/>Today, I use my aesthetic sense and web application design skills to develop aesthetically
                 appealing, device-responsive, and fast-loading digital environments.
             </h4>
-        </div>
+        </div></a>
     </About>
 
     <Value />
@@ -43,6 +46,7 @@ export default function Body({ BtnText }) {
           <Sections />
           <Sections />
       </Tools>
+      
     </Home>
   )
 }
@@ -57,8 +61,13 @@ const DownArrow = styled.img`
 
 const Name = styled.div`
   position: relative;
-  padding-top: 7em;
-  margin-left: 3em;
+  float: left;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: left;
+  a{
+    text-align: left;
+  }
   @media (max-width: 768px) {
     padding-left: 0;
     margin-left: 1em;
@@ -67,6 +76,7 @@ const Name = styled.div`
 
 const Ava = styled.div`
   display: flex;
+  padding-top: 7em;
   @media (max-width: 768px) {
     h3{
       font-size: 15px;
@@ -115,11 +125,17 @@ const Tools = styled.div`
 
 const About = styled.div`
   display: flex;
-  flex-direction: row;
-  margin-left: 3em;
+  height: auto;
+  a{
+    padding: 2em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
   @media (max-width: 768px) {
-    padding-left: 0;
-    margin-left: 1em;
+    h4{
+      text-size: 15px;
+    }
   }
 `
 

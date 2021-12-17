@@ -20,14 +20,14 @@ const Gamble = styled.div`
     border-radius: 2px;
     margin: 20px 0 20px;
     width: 100%;
-    min-height: 500px;
+    height: auto;
     align-items: left;
     display: flex;
     flex-direction: row;
     div{
         background-color: #363434;
-        width: 100%;
+        width: 150%;
         height: 100%;
-        margin: 10px 10px 10px;
+        margin: 10px 0 10px;
     }
 `
