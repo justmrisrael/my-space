@@ -8,12 +8,13 @@ import Header from "./Header";
 export default function Body({ BtnText }) {
   return (
     <Home className="container">
-      <Name className="section">
       <Header />
+      <Name className="section">
         <a><Ava>
           <h3>I'm Israel Musa // Available for hire.</h3>
+          <h1>I'm a Front-end Developer and UI/UX Designer</h1>
         </Ava>
-        <h1>I'm a Front-end Developer and UI/UX Designer</h1>
+        
         <Intro>
           <h4>
             An enthusiastic and innovative developer, with a focus on developing
@@ -28,12 +29,12 @@ export default function Body({ BtnText }) {
       </Name>
       
     <About className="section">
-        <a><h1>About Me -</h1>
+        <a><h1>About Me</h1>
         <div className="block">
             <h4><h3>INTRODUCTION</h3>Hello! my name is Israel and I build products for the web. 
               At the age of 16, I was introduced to coding and learned to create mobile websites.
               I also found photography and filmmaking, which allow me to convey my artistic vision.
-              <br/>Today, I use my aesthetic sense and web application design skills to develop aesthetically
+              <br/><br/>Today, I use my aesthetic sense and web application design skills to develop aesthetically
                 appealing, device-responsive, and fast-loading digital environments.
             </h4>
         </div></a>
@@ -42,9 +43,9 @@ export default function Body({ BtnText }) {
     <Value />
 
       <Tools className="section">
-        <h1>Projects -</h1>
+        <a><h1>Projects</h1>
           <Sections />
-          <Sections />
+          <Sections /></a>
       </Tools>
       
     </Home>
@@ -66,20 +67,22 @@ const Name = styled.div`
   flex-flow: column nowrap;
   align-items: left;
   a{
+    padding: 2em;
     text-align: left;
-  }
-  @media (max-width: 768px) {
-    padding-left: 0;
-    margin-left: 1em;
   }
 `
 
 const Ava = styled.div`
   display: flex;
-  padding-top: 7em;
+  flex-direction: column;
+  padding-top: 1em;
   @media (max-width: 768px) {
+    padding-top: 3em;
     h3{
       font-size: 15px;
+    }
+    h1{
+      font-size: 50px;
     }
   }
 `
@@ -132,14 +135,14 @@ const About = styled.div`
     display: flex;
     flex-direction: column;
   }
-  @media (max-width: 768px) {
-    h4{
-      text-size: 15px;
+  div{
+    @media (max-width: 768px) {
+      h4{
+        font-size: 15px;
+      }
     }
   }
 `
 
 const Home = styled.div`
-  flex-direction: column;
-  padding-bottom: 58px;
 `
