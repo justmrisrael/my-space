@@ -1,8 +1,10 @@
-import styled from "styled-components"
-import React from "react"
-import Sections from "./Sections"
-import Value from "./Value"
+import styled from "styled-components";
+import React from "react";
+import Sections from "./Sections";
+import Value from "./Value";
 import Header from "./Header";
+import Footer from "./Footer";
+
 
 
 export default function Body({ BtnText }) {
@@ -47,7 +49,7 @@ export default function Body({ BtnText }) {
           <Sections />
           <Sections /></a>
       </Tools>
-      
+      <Footer />
     </Home>
   )
 }
