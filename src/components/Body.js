@@ -43,7 +43,7 @@ export default function Body({ BtnText }) {
 
       <Tools className="section">
         <a><h1>Projects</h1>
-          <Grid AppImage="./images/portfolio.png"/>
+          <Grid />
           <Grid /></a>
       </Tools>
 

@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 import styled from "styled-components";
 
-const Grid = ({AppImage}) => {
+const Grid = () => {
     return (
         <div>
             <Gamble>
-                <div></div>
+                <Img src="./portfolio.png"/>
                 <div> </div>
             </Gamble>
         </div>
@@ -25,9 +25,12 @@ const Gamble = styled.div`
     display: flex;
     flex-direction: row;
     div{
-        background-color: #363434;
         width: 100%;
         height: 100%;
         margin: 9px;
     }
 `
+const Img = styled.div`
+        width: 100%;
+        height: 100%;
+        margin: 9px;`
