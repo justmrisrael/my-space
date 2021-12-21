@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import React from "react";
-import Sections from "./Sections";
+import Grid from "./Grid";
 import Value from "./Value";
 import Header from "./Header";
 import Footer from "./Footer";
-
 
 
 export default function Body({ BtnText }) {
@@ -29,26 +28,26 @@ export default function Body({ BtnText }) {
         </ButtonGroup></a>
         <DownArrow src="./images/down-arrow.svg" />
       </Name>
-      
-    <About className="section">
-        <a><h1>About Me</h1>
-        <div className="block">
-            <h4><h3>INTRODUCTION</h3>Hello! my name is Israel and I build products for the web. 
-              At the age of 16, I was introduced to coding and learned to create mobile websites.
-              I also found photography and filmmaking, which allow me to convey my artistic vision.
-              <br/><br/>Today, I use my aesthetic sense and web application design skills to develop aesthetically
-                appealing, device-responsive, and fast-loading digital environments.
-            </h4>
-        </div></a>
-    </About>
 
-    <Value />
+      <About className="section">
+          <a><h1>About Me</h1>
+          <div className="block">
+              <h4><h3>INTRODUCTION</h3>Hello! my name is Israel and I build products for the web. 
+                At the age of 16, I was introduced to coding and learned to create mobile websites.
+                I also found photography and filmmaking, which allow me to convey my artistic vision.
+                <br/><br/>Today, I use my aesthetic sense and web application design skills to develop aesthetically
+                  appealing, device-responsive, and fast-loading digital environments.
+              </h4>
+          </div></a>
+      </About>
 
       <Tools className="section">
         <a><h1>Projects</h1>
-          <Sections />
-          <Sections /></a>
+          <Grid AppImage="./images/portfolio.png"/>
+          <Grid /></a>
       </Tools>
+
+      <Value />
       <Footer />
     </Home>
   )
@@ -122,10 +121,12 @@ const Intro = styled.div`
 `
 
 const Tools = styled.div`
-  align-items: left;
   justify-content: space-between;
   display: flex;
   flex-direction: column;
+  a{
+    padding: 2em;
+  }
 `
 
 const About = styled.div`
