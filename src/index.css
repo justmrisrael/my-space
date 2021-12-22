@@ -11,6 +11,10 @@ body{
   background-color: #2A2B2A;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 * {
   cursor: none;
 }

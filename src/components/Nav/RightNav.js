@@ -4,10 +4,11 @@ import styled from 'styled-components';
 const RightNav = ({ open }) => {
     return (
     <Menu open = { open }>
-        <a href="#">Home</a>
-        <a href="#">Projects</a>
+        <a href="#one">Home</a>
+        <a href="#two">About</a>
+        <a href="#three">Projects</a>
         <a href="./resume/Israel_ Musa_resume.pdf">Resumé</a>
-        <a href="#">About</a>
+        
     </Menu>
     )
 }

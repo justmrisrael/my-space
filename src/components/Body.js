@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-import Grid from "./Grid";
+import Card from "./Card";
 import Value from "./Value";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -10,7 +10,7 @@ export default function Body({ BtnText }) {
   return (
     <Home className="container">
       <Header />
-      <Name className="section">
+      <Name className="section" id="one">
         <a><Ava>
           <h3>I'm Israel Musa // Available for hire.</h3>
           <h1>I'm a Front-end Developer and UI/UX Designer</h1>
@@ -29,7 +29,7 @@ export default function Body({ BtnText }) {
         <DownArrow src="./images/down-arrow.svg" />
       </Name>
 
-      <About className="section">
+      <About className="section" id="two">
           <a><h1>About Me</h1>
           <div className="block">
               <h4><h3>INTRODUCTION</h3>Hello! my name is Israel and I build products for the web. 
@@ -41,10 +41,11 @@ export default function Body({ BtnText }) {
           </div></a>
       </About>
 
-      <Tools className="section">
+      <Tools className="section" id="three">
         <a><h1>Projects</h1>
-          <Grid />
-          <Grid /></a>
+          <Card imageSrc={require("./portfolio.png")}
+          text="Some Text"/>
+          <Card /></a>
       </Tools>
 
       <Value />

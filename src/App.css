@@ -165,6 +165,8 @@ h5 {
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  background-color: #7D827D;
+  color: white;
 }
 
 /*************text animation********************/

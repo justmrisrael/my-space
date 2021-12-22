@@ -12,7 +12,7 @@ const Footer = () => {
           <a href="./resume/Israel_ Musa_resume.pdf">Resumé </a>
         </Menu>
         <Btt>
-          <a href="topFunction()">Back to top </a>
+          <a href="#one">Back to top </a>
         </Btt>
       </Foot>
     </div>

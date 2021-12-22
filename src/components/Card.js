@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from "styled-components";
 
-const Grid = () => {
+const Card = props => {
     return (
         <div>
             <Gamble>
-                <Img src="./portfolio.png"/>
-                <div> </div>
+                <Img src={props.imageSrc}/>
+                <Text src={props.text}/>
             </Gamble>
         </div>
     )
 }
 
-export default Grid;
+export default Card;
 
 const Gamble = styled.div`
     border: 2px solid #999999;
@@ -24,13 +24,14 @@ const Gamble = styled.div`
     align-items: left;
     display: flex;
     flex-direction: row;
-    div{
-        width: 100%;
-        height: 100%;
-        margin: 9px;
-    }
 `
 const Img = styled.div`
-        width: 100%;
-        height: 100%;
-        margin: 9px;`
+    width: 100%;
+    height: 100%;
+    margin: 9px;
+`
+const Text = styled.div`
+    width: 100%;
+    height: 100%;
+    margin: 9px;
+`
