@@ -1,3 +1,3 @@
-#This webb app was created with the react app
+#This portfolio was created with the react app
 
 deployed on israelmusa.netlify.app
