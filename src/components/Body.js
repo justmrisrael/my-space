@@ -45,7 +45,9 @@ export default function Body({ BtnText }) {
         <a><h1>Projects</h1>
           <Card imageSrc={require("./portfolio.png")}
           text="Some Text"/>
-          <Card /></a>
+          <Card />
+          <Card />
+          </a>
       </Tools>
 
       <Value />
@@ -122,12 +124,8 @@ const Intro = styled.div`
 `
 
 const Tools = styled.div`
-  justify-content: space-between;
   display: flex;
   flex-direction: column;
-  a{
-    padding: 2em;
-  }
 `
 
 const About = styled.div`

@@ -20,10 +20,14 @@ const Gamble = styled.div`
     border-radius: 2px;
     margin: 20px 0 20px;
     width: 800px;
-    height: 350px;
+    height: 150px;
     align-items: left;
     display: flex;
     flex-direction: row;
+    @media (max-width: 768px) {
+        width: 270px;
+        height: 150px;
+    }
 `
 const Img = styled.div`
     width: 100%;
