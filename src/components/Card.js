@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
+import port from "./portfolio.png";
 
 const Card = props => {
     return (
         <div>
             <Gamble>
-                <Img src={props.imageSrc}/>
+                <Img image={props.imageSrc}/>
                 <Text src={props.text}/>
             </Gamble>
         </div>
@@ -29,11 +30,13 @@ const Gamble = styled.div`
         height: 150px;
     }
 `
-const Img = styled.div`
+
+const Img = styled.img`
     width: 100%;
     height: 100%;
     margin: 9px;
 `
+
 const Text = styled.div`
     width: 100%;
     height: 100%;
