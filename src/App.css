@@ -36,6 +36,10 @@
   font-family: "Fira";
 }
 
+.card{
+  background-image: "./src/components/portfolio.png";
+}
+
 /* font families */
 @font-face {
   font-family: 'Geo';

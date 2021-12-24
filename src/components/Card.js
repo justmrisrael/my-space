@@ -1,12 +1,11 @@
-import React from 'react';
+import React from "react";
 import styled from "styled-components";
-import port from "./portfolio.png";
 
 const Card = props => {
     return (
         <div>
             <Gamble>
-                <Img image={props.imageSrc}/>
+                <Img className="card" image={props.imageSrc}/>
                 <Text src={props.text}/>
             </Gamble>
         </div>
