@@ -3,15 +3,15 @@ import styled from "styled-components";
 
 const Card = props => {
     return (
-        <div>
-            <Gamble>
-                <Img className="card" image={props.imageSrc}/>
-                <Text src={props.text}/>
+            <Gamble >
+                <Img src={props.imageSrc} />
+                <Text> <h3>{props.text}</h3></Text>
             </Gamble>
-        </div>
     )
-}
-
+};
+// = props =>
+// src={props.text}
+// image={props.imageSrc}
 export default Card;
 
 const Gamble = styled.div`
@@ -19,20 +19,16 @@ const Gamble = styled.div`
     border-top: 50px solid #999999;
     border-radius: 2px;
     margin: 20px 0 20px;
-    width: 800px;
-    height: 150px;
+    width: 70vw;
+    height: auto;
     align-items: left;
     display: flex;
     flex-direction: row;
-    @media (max-width: 768px) {
-        width: 270px;
-        height: 150px;
-    }
 `
 
 const Img = styled.img`
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     margin: 9px;
 `
 
@@ -40,4 +36,10 @@ const Text = styled.div`
     width: 100%;
     height: 100%;
     margin: 9px;
+    border-left: 0.5px solid white;
+    padding-left: 2em;
+    h3{
+        color: white;
+        font-weight: bold;
+    }
 `

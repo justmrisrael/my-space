@@ -43,9 +43,12 @@ export default function Body({ BtnText }) {
 
       <Tools className="section" id="three">
         <a><h1>Projects</h1>
-          <Card imageSrc={require("./portfolio.png")}
-          text="Some Text"/>
-          <Card />
+          <Card 
+            imageSrc="./images/portfolio.svg"
+            text="My Portfolio"
+          />
+          {/* imageSrc={require("./portfolio.png")}
+          text="Some Text" */}
           <Card />
           </a>
       </Tools>
