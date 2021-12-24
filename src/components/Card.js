@@ -24,6 +24,9 @@ const Gamble = styled.div`
     align-items: left;
     display: flex;
     flex-direction: row;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `
 
 const Img = styled.img`

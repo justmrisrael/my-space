@@ -47,9 +47,10 @@ export default function Body({ BtnText }) {
             imageSrc="./images/portfolio.svg"
             text="My Portfolio"
           />
-          {/* imageSrc={require("./portfolio.png")}
-          text="Some Text" */}
-          <Card />
+          <Card 
+            imageSrc="./images/tesla.svg"
+            text="Tesla Landing Page"
+            />
           </a>
       </Tools>
 
@@ -129,6 +130,7 @@ const Intro = styled.div`
 const Tools = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: 3em;
 `
 
 const About = styled.div`
