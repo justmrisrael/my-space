@@ -19,7 +19,7 @@ const Menu = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  padding-right: 2em;
+  padding-right: 1em;
 
   a {
       font-family: Fira;
@@ -31,7 +31,6 @@ const Menu = styled.ul`
         text-decoration: underline;
       }
   }
-  
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
@@ -42,7 +41,7 @@ const Menu = styled.ul`
     right: 0;
     z-index: 16;
     height: 100vh;
-    width: 350px;
+    width: 250px;
     padding-top: 5rem;
     transition: transform 0.6s ease-in-out;
 
