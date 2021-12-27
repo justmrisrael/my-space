@@ -1,6 +1,6 @@
 .App {
   width: 100vw;
-  
+
   margin: 0;
 }
 
@@ -19,7 +19,7 @@
   align-items: center;
   width: 100vw;
   max-height: 100vh;
-  margin-bottom: 1px; 
+  margin-bottom: 1px;
 }
 
 .footer {
@@ -31,38 +31,50 @@
   padding: 80px 0;
   align-items: center;
   background-color: #060606;
-  color: #7D827D;
+  color: #7d827d;
   text-align: center;
   font-family: "Fira";
 }
 
+.button {
+  background-color: #2a2b2a;
+  height: 60px;
+  width: 300px;
+  color: #7d827d;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #7d827d;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: "Fira";
+  font-weight: solid;
+}
+
 /* font families */
 @font-face {
-  font-family: 'Geo';
-  src: url('./font/Geo/Geo-Regular.ttf');
-}
-
-@font-face{
-  font-family: 'Fira';
-  src: url('./font/Fira_Code/FiraCode-VariableFont_wght.ttf');
-}
-
-@font-face{
-  font-family: 'Bebas';
-  src: url('./font/Bebas_Neue/BebasNeue-Regular.ttf');
+  font-family: "Geo";
+  src: url("./font/Geo/Geo-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'Nexa';
-  src: url('./font/Nexa/NexaText-Trial-Regular.ttf');
+  font-family: "Fira";
+  src: url("./font/Fira_Code/FiraCode-VariableFont_wght.ttf");
 }
-
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('./font/Montserrat/Montserrat-Regular.ttf');
+  font-family: "Bebas";
+  src: url("./font/Bebas_Neue/BebasNeue-Regular.ttf");
 }
 
+@font-face {
+  font-family: "Nexa";
+  src: url("./font/Nexa/NexaText-Trial-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./font/Montserrat/Montserrat-Regular.ttf");
+}
 
 @keyframes App-logo-spin {
   from {
@@ -85,18 +97,18 @@ line {
   margin: 10px 20px 10px;
 }
 
-h1{
-    font-family: Bebas;
-    font-size: 7vw;
-    font-weight: normal;
-    text-align: left;
-    color: #565856;
-    max-width: 1050px;
-    margin: 0;
+h1 {
+  font-family: Bebas;
+  font-size: 7vw;
+  font-weight: normal;
+  text-align: left;
+  color: #565856;
+  max-width: 1050px;
+  margin: 0;
 }
 
-h2{
-  color: #7D827D;
+h2 {
+  color: #7d827d;
   font-family: Fira;
   font-size: 3em;
   text-align: left;
@@ -132,23 +144,22 @@ h5 {
   margin-bottom: 1px;
 }
 
- .block {
+.block {
   min-height: auto;
   max-width: 1050px;
   align-items: left;
 }
 
 .logo {
-  position: relative; 
-  border: 2px solid #7D827D;
-  background-color: #2A2B2A;
+  position: relative;
+  border: 2px solid #7d827d;
+  background-color: #2a2b2a;
   font-family: "Geo";
-  color: #7D827D;
+  color: #7d827d;
   font-size: 2em;
-  left: 20px;
-  padding: 1px;
-  margin-top: 30px;
-  margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* hover effect */
 .hvr-grow {
@@ -162,10 +173,12 @@ h5 {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-  background-color: #7D827D;
+  background-color: #7d827d;
   color: white;
 }
 

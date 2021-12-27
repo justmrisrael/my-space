@@ -13,9 +13,9 @@ const Header = () => {
 export default Header;
 
 const NavBar = styled.div`
-  width: 100%;
+  width: auto;
   display: flex;
-  padding: 0 0;
+  margin: 20px;
   justify-content: space-between;
   top: 0; 
   right: 0;
