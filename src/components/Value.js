@@ -19,10 +19,11 @@ const Values = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    a{
-        padding: 2em;
+    a {
+        margin: auto;
+        padding: 1.5em;
         text-align: left;
-    }
+      }
     @media (max-width: 768px) {
         padding: 0;
     }

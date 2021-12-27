@@ -25,7 +25,7 @@ export default function Body({ BtnText }) {
           </Intro>
 
           <ButtonGroup>
-            <Link to="/contact">
+            <Link style = {{background: "#2a2b2a", width: "100%", justifyContent: "left"}}to="/contact">
               <Bttn className="button hvr-grow">{BtnText}</Bttn>
             </Link>
           </ButtonGroup>
@@ -60,7 +60,9 @@ export default function Body({ BtnText }) {
         </a>
       </Tools>
 
-      <Value />
+      <a>
+        <Value />
+      </a>
       <Footer />
     </Home>
   );
@@ -79,9 +81,9 @@ const Name = styled.div`
   float: left;
   display: flex;
   flex-flow: column nowrap;
-  align-items: left;
   a {
-    padding: 2em;
+    margin: auto;
+    padding: 1.5em;
     text-align: left;
   }
 `;
@@ -125,16 +127,21 @@ const Tools = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 3em;
+  a {
+    margin: auto;
+    padding: 1.5em;
+    text-align: left;
+  }
 `;
 
 const About = styled.div`
   display: flex;
-  height: auto;
   a {
-    padding: 2em;
+    padding: 1.5em;
     text-align: left;
     display: flex;
     flex-direction: column;
+    margin: auto;
   }
   div {
     @media (max-width: 768px) {
