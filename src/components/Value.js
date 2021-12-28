@@ -20,6 +20,7 @@ const Values = styled.div`
     flex-direction: column;
     justify-content: space-around;
     a {
+        padding: 1.5em;
         margin: auto;
         text-align: left;
       }
