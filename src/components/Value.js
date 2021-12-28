@@ -21,11 +21,7 @@ const Values = styled.div`
     justify-content: space-around;
     a {
         margin: auto;
-        padding: 1.5em;
         text-align: left;
       }
-    @media (max-width: 768px) {
-        padding: 0;
-    }
     
 `

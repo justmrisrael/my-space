@@ -23,20 +23,19 @@ export default function Body({ BtnText }) {
               developing visually aesthetic front-end for web applications.
             </h4>
           </Intro>
-
+          </a>
           <ButtonGroup>
-            <Link style = {{background: "#2a2b2a", width: "100%", justifyContent: "left"}}to="/contact">
+            <Link style = {{width: "100%"}} to="/contact">
               <Bttn className="button hvr-grow">{BtnText}</Bttn>
             </Link>
           </ButtonGroup>
-        </a>
+          
         <DownArrow src="./images/down-arrow.svg" />
       </Name>
 
       <About className="section" id="two">
         <a>
-          <h1>About Me</h1>
-          <div className="block">
+          <h1>About Me</h1>\
             <h4>
               <h3>INTRODUCTION</h3>Hello! my name is Israel and I build products
               for the web. At the age of 16, I was introduced to coding and
@@ -48,7 +47,6 @@ export default function Body({ BtnText }) {
               to develop aesthetically appealing, device-responsive, and
               fast-loading digital environments.
             </h4>
-          </div>
         </a>
       </About>
 
@@ -77,14 +75,8 @@ const DownArrow = styled.img`
 `;
 
 const Name = styled.div`
-  position: relative;
-  float: left;
-  display: flex;
-  flex-flow: column nowrap;
-  a {
-    margin: auto;
+  a{
     padding: 1.5em;
-    text-align: left;
   }
 `;
 
@@ -104,6 +96,8 @@ const Ava = styled.div`
 `;
 const ButtonGroup = styled.div`
   display: flex;
+  box-sizing: border-box;
+  align-items: left;
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -124,24 +118,14 @@ const Intro = styled.div`
 `;
 
 const Tools = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3em;
   a {
-    margin: auto;
     padding: 1.5em;
-    text-align: left;
   }
 `;
 
 const About = styled.div`
-  display: flex;
   a {
     padding: 1.5em;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
   }
   div {
     @media (max-width: 768px) {
