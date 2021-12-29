@@ -18,10 +18,8 @@ export default Value
 const Values = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     a {
         padding: 1.5em;
-        margin: auto;
         text-align: left;
       }
     

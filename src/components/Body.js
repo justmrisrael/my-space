@@ -25,7 +25,7 @@ export default function Body({ BtnText }) {
           </Intro>
           </a>
           <ButtonGroup>
-            <Link style = {{width: "100%"}} to="/contact">
+            <Link className="link" to="/contact">
               <Bttn className="button hvr-grow">{BtnText}</Bttn>
             </Link>
           </ButtonGroup>
@@ -35,7 +35,7 @@ export default function Body({ BtnText }) {
 
       <About className="section" id="two">
         <a>
-          <h1>About Me</h1>\
+          <h1>About Me</h1>
             <h4>
               <h3>INTRODUCTION</h3>Hello! my name is Israel and I build products
               for the web. At the age of 16, I was introduced to coding and
@@ -46,7 +46,7 @@ export default function Body({ BtnText }) {
               Today, I use my aesthetic sense and web application design skills
               to develop aesthetically appealing, device-responsive, and
               fast-loading digital environments.
-            </h4>
+              </h4>
         </a>
       </About>
 
@@ -58,9 +58,7 @@ export default function Body({ BtnText }) {
         </a>
       </Tools>
 
-      <a>
-        <Value />
-      </a>
+      <Value />
       <Footer />
     </Home>
   );
@@ -127,13 +125,13 @@ const About = styled.div`
   a {
     padding: 1.5em;
   }
-  div {
-    @media (max-width: 768px) {
-      h4 {
-        font-size: 15px;
-      }
+  @media (max-width: 768px) {
+    h4 {
+      font-size: 15px;
     }
   }
+  
 `;
 
-const Home = styled.div``;
+const Home = styled.div`
+`;

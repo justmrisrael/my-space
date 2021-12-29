@@ -15,6 +15,7 @@ export default Header;
 const NavBar = styled.div`
   width: auto;
   display: flex;
+  box-sizing: border-box;
   margin: 20px;
   justify-content: space-between;
   top: 0; 
