@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Burger from "./Nav/Burger";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <NavBar>
-        <a href="https://israelmusa.netlify.app"><div className="logo hvr-grow">IM_ </div></a>
+        <Link to="/"> <div className="logo hvr-grow">IM_ </div></Link>
       <Burger />
     </NavBar>
   )

@@ -3,9 +3,10 @@ import styled from "styled-components";
 
 const Card = props => {
     return (
-            <Gamble >
-                <Img src={props.imageSrc} />
-                <Text> <h3>{props.text}</h3></Text>
+            <Gamble className="card hvr-grow">
+                <Img className="card-image" src={props.imageSrc} />
+                <div className="card-text"> <h4>{props.text}</h4></div>
+                <div className="links"></div>
             </Gamble>
     )
 };
@@ -15,34 +16,23 @@ const Card = props => {
 export default Card;
 
 const Gamble = styled.div`
-    border: 2px solid #999999;
-    border-top: 50px solid #999999;
-    border-radius: 2px;
-    margin: 20px 0 20px;
-    width: 70vw;
-    height: auto;
-    align-items: left;
     display: flex;
-    flex-direction: row;
-    @media (max-width: 768px) {
-        flex-direction: column;
-    }
+    flex-direction: column;
 `
-
+// border: 2px solid #999999;
+// border-top: 50px solid #999999;
+// border-radius: 2px;
+// margin: 20px 0 20px;
+// width: auto;
+// height: auto;
+// align-items: left;
+// 
+// 
+// @media (max-width: 768px) {
+//     flex-direction: column;
+// }
 const Img = styled.img`
-    width: 50%;
-    height: 50%;
-    margin: 9px;
-`
-
-const Text = styled.div`
     width: 100%;
     height: 100%;
-    margin: 9px;
-    border-left: 0.5px solid white;
-    padding-left: 2em;
-    h3{
-        color: white;
-        font-weight: bold;
-    }
+    margin-right: 10px;
 `

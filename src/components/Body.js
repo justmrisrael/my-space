@@ -23,36 +23,36 @@ export default function Body({ BtnText }) {
               developing visually aesthetic front-end for web applications.
             </h4>
           </Intro>
-          </a>
-          <ButtonGroup>
-            <Link className="link" to="/contact">
-              <Bttn className="button hvr-grow">{BtnText}</Bttn>
-            </Link>
-          </ButtonGroup>
-          
+        </a>
+        <ButtonGroup>
+          <Link to="/contact">
+            <Bttn className="button hvr-grow">{BtnText}</Bttn>
+          </Link>
+        </ButtonGroup>
+
         <DownArrow src="./images/down-arrow.svg" />
       </Name>
 
       <About className="section" id="two">
         <a>
           <h1>About Me</h1>
-            <h4>
-              <h3>INTRODUCTION</h3>Hello! my name is Israel and I build products
-              for the web. At the age of 16, I was introduced to coding and
-              learned to create mobile websites. I also found photography and
-              filmmaking, which allow me to convey my artistic vision.
-              <br />
-              <br />
-              Today, I use my aesthetic sense and web application design skills
-              to develop aesthetically appealing, device-responsive, and
-              fast-loading digital environments.
-              </h4>
+          <h4>
+            <h3>INTRODUCTION</h3>Hello! my name is Israel and I build products
+            for the web. At the age of 16, I was introduced to coding and
+            learned to create mobile websites. I also found photography and
+            filmmaking, which allow me to convey my artistic vision.
+            <br />
+            <br />
+            Today, I use my aesthetic sense and web application design skills to
+            develop aesthetically appealing, device-responsive, and fast-loading
+            digital environments.
+          </h4>
         </a>
       </About>
 
       <Tools className="section" id="three">
+      <h1>Projects</h1>
         <a>
-          <h1>Projects</h1>
           <Card imageSrc="./images/portfolio.svg" text="My Portfolio" />
           <Card imageSrc="./images/tesla.svg" text="Tesla Landing Page" />
         </a>
@@ -73,7 +73,7 @@ const DownArrow = styled.img`
 `;
 
 const Name = styled.div`
-  a{
+  a {
     padding: 1.5em;
   }
 `;
@@ -116,9 +116,21 @@ const Intro = styled.div`
 `;
 
 const Tools = styled.div`
-  a {
-    padding: 1.5em;
+a{
+  box-sizing: border-box;
+  padding: 200px;
+  padding: 1.5em;
+  display: flex;
+}
+h1{
+  padding-left: 0.3em;
+}
+@media (max-width: 768px) {
+  a{
+    display: flex;
+    flex-direction: column;
   }
+}
 `;
 
 const About = styled.div`
@@ -130,8 +142,6 @@ const About = styled.div`
       font-size: 15px;
     }
   }
-  
 `;
 
-const Home = styled.div`
-`;
+const Home = styled.div``;
