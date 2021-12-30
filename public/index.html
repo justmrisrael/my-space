@@ -31,12 +31,26 @@
     -->
     <div class="loader-wrapper">
       <span class="loader"><span class="loader-inner"></span></span>
-  </div>
-  <script>
-    $(window).on("load", function(){
-      $(".loader-wrapper").delay(1500).fadeOut("slow");
-    });
-  </script>
-
+    </div>
+    <script>
+      $(window).on("load", function () {
+        $(".loader-wrapper").delay(1500).fadeOut("slow");
+      });
+    </script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script type="text/javascript">
+      var lastScrollTop = 0;
+      navbar = document.getElementById("nav");
+      window.addEventListener("scroll", function () {
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          nav.style.top = "-80px";
+        } else {
+          nav.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+      });
+    </script>
   </body>
 </html>

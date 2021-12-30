@@ -6,6 +6,7 @@ import Value from "./Value";
 import Header from "./Header";
 import Footer from "./Footer";
 
+
 export default function Body({ BtnText }) {
   return (
     <Home className="container">
@@ -69,11 +70,12 @@ const DownArrow = styled.img`
   padding: 30px 0 30px;
   left: 50%;
   overflow-x: hidden;
-  animation: animateDown infinite 1.5s;
+  animation: animateDown infinite 2s;
 `;
 
 const Name = styled.div`
   a {
+    margin-top: 100px;
     padding: 1.5em;
   }
 `;
@@ -92,8 +94,8 @@ const Ava = styled.div`
   }
 `;
 const ButtonGroup = styled.div`
-  display: flex;
   box-sizing: border-box;
+  padding-left: 30px;
   align-items: left;
   @media (max-width: 768px) {
     flex-direction: column;
@@ -138,6 +140,7 @@ h1{
 const About = styled.div`
   a {
     padding: 1.5em;
+    margin: 5em 0;
   }
   @media (max-width: 768px) {
     h4 {

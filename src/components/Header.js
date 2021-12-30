@@ -1,26 +1,15 @@
 import React from "react";
-import styled from "styled-components";
 import Burger from "./Nav/Burger";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <NavBar>
+    <div className="navbar" id="nav">
         <Link to="/"> <div className="logo hvr-grow">IM_ </div></Link>
       <Burger />
-    </NavBar>
+    </div>
   )
 }
 export default Header;
 
-const NavBar = styled.div`
-  width: auto;
-  display: flex;
-  box-sizing: border-box;
-  margin: 30px 25px;
-  justify-content: space-between;
-  top: 0; 
-  right: 0;
-  z-index: 1;
-`
 

@@ -11,7 +11,7 @@ const Contact = ({ BtnText }) => {
     <div BtnText="Shoot!">
       <DotRing />
       <Header />
-      <div style={{ padding: "2.5em", height: "100vh" }}>
+      <div style={{ marginTop: "100px", padding: "2.5em", height: "100vh" }}>
         <h1>Get in touch!</h1>
         <h4>Got a job, project, or just want to say hello?</h4>
         <form
