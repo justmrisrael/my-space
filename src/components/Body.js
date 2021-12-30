@@ -130,6 +130,9 @@ h1{
     display: flex;
     flex-direction: column;
   }
+  h1{
+    padding-left: 1em;
+  }
 }
 `;
 

@@ -3,8 +3,8 @@ import styled from "styled-components";
 import RightNav from './RightNav';
 
 const StyledBurger = styled.div`
-  width: 3rem;
-  height: 2.1em;
+  width: 2rem;
+  height: 2.1rem;
   position: relative;
   display: none;
   margin-top: 3px;
@@ -31,7 +31,7 @@ const StyledBurger = styled.div`
     &:nth-child(2) {
       transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
       opacity: ${({ open }) => open ? 0 : 1};
-      width: 1.5rem;
+      width: 2rem;
     }
 
     &:nth-child(3) {
