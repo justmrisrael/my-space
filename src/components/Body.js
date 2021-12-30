@@ -26,7 +26,7 @@ export default function Body({ BtnText }) {
         </a>
         <ButtonGroup>
           <Link to="/contact">
-            <Bttn className="button hvr-grow">{BtnText}</Bttn>
+            <Bttn className="button hvr-sweep-to-right">{BtnText}</Bttn>
           </Link>
         </ButtonGroup>
 
@@ -83,7 +83,6 @@ const Ava = styled.div`
   flex-direction: column;
   padding-top: 1em;
   @media (max-width: 768px) {
-    padding-top: 3em;
     h3 {
       font-size: 15px;
     }

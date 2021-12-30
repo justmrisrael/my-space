@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 const RightNav = ({ open }) => {
   return (
     <Menu open={open}>
-      <Link to="/">Home</Link>
-      <a href="#two">About</a>
-      <a href="#three">Projects</a>
-      <Link to="/contact">Contact</Link>
-      <a href="./resume/Israel_ Musa_resume.pdf">Resumé</a>
+      <Link to="/" className="hvr-sweep-to-right">Home</Link>
+      <a href="#two" className="hvr-sweep-to-right">About</a>
+      <a href="#three" className="hvr-sweep-to-right">Projects</a>
+      <Link to="/contact" className="hvr-sweep-to-right">Contact</Link>
+      <a href="./resume/Israel_ Musa_resume.pdf" className="hvr-sweep-to-right">Resumé</a>
     </Menu>
   );
 };
@@ -27,9 +27,6 @@ const Menu = styled.ul`
     padding: 0 15px;
     font-size: 20px;
     color: #7d827d;
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   @media (max-width: 768px) {

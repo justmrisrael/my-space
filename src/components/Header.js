@@ -17,7 +17,7 @@ const NavBar = styled.div`
   width: auto;
   display: flex;
   box-sizing: border-box;
-  margin: 20px;
+  margin: 30px 25px;
   justify-content: space-between;
   top: 0; 
   right: 0;
