@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const RightNav = ({ open }) => {
   return (
     <Menu open={open}>
-      <a href="#one">Home</a>
+      <Link to="/">Home</Link>
       <a href="#two">About</a>
       <a href="#three">Projects</a>
       <Link to="/contact">Contact</Link>
