@@ -14,14 +14,14 @@ export default function Body({ BtnText }) {
       <Name className="section" id="one">
         <a>
           <Ava>
-            <h3>I'm Israel Musa // Available for hire.</h3>
+            <h3>I'm Israel Musa -- Available for hire.</h3>
             <h1>I'm a Front-end Developer and UI/UX Designer</h1>
           </Ava>
 
           <Intro>
             <h4>
               An enthusiastic and innovative developer, with a focus on
-              developing visually aesthetic front-end for web applications.
+              developing visually aesthetic and responsive front-end for web applications.
             </h4>
           </Intro>
         </a>
@@ -83,7 +83,7 @@ const Name = styled.div`
 const Ava = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 1em;
+  margin-top: 1em;
   @media (max-width: 768px) {
     h3 {
       font-size: 15px;
@@ -108,7 +108,7 @@ const Bttn = styled.div`
 `;
 
 const Intro = styled.div`
-  max-width: 750px;
+  max-width: 1050px;
   @media (max-width: 768px) {
     h4 {
       font-size: 15px;

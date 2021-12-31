@@ -157,19 +157,18 @@ a {
 }
 
 line {
-  border-bottom: 1px solid #999999;
-  width: 50px;
+  border-bottom: 2px solid white;
+  width: 100px;
   line-height: 0.1em;
-  margin: 10px 20px 10px;
+  margin: 10px 0px 20px;
 }
 
 h1 {
   font-family: Bebas;
-  font-size: 7vw;
+  font-size: 8vw;
   font-weight: normal;
   text-align: left;
   color: #565856;
-  max-width: 1050px;
   margin: 0;
 }
 
