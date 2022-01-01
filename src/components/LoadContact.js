@@ -8,6 +8,7 @@ import Footer from "./Footer";
 const Contact = ({ BtnText }) => {
   const { cursorChangeHandler } = useContext(MouseContext);
   return (
+    
     <div BtnText="Shoot!">
       <DotRing />
       <Header />

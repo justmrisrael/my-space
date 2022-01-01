@@ -15,7 +15,7 @@ export default function Body({ BtnText }) {
         <a>
           <Ava>
             <h3>I'm Israel Musa -- Available for hire.</h3>
-            <h1>I'm a Front-end Developer and UI/UX Designer</h1>
+            <h1 >I'm a Front-end Developer and UI/UX Designer</h1>
           </Ava>
 
           <Intro>
