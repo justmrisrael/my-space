@@ -96,6 +96,7 @@ const Ava = styled.div`
 const ButtonGroup = styled.div`
   box-sizing: border-box;
   padding-left: 30px;
+  margin-top: -30px;
   align-items: left;
   @media (max-width: 768px) {
     flex-direction: column;
