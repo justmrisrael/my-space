@@ -43,8 +43,12 @@ const Menu = styled.ul`
     transition: transform 0.6s ease-in-out;
 
     a {
-      color: #000;
+      font-family: Bebas;
+      text-align: left;
+      font-size: 12vw;
+      color: #2A2B2A;
       padding: 20px;
+      
     }
   }
 `;

@@ -52,9 +52,9 @@ export default function Body({ BtnText }) {
       </About>
 
       <Tools className="section" id="three">
-      <h1>Projects</h1>
+      <h1 >Projects</h1>
         <a>
-          <Card imageSrc="./images/portfolio.svg" text="My Portfolio" />
+          <Card imageSrc="./images/portfolio.svg" text="My Portfolio"/>
           <Card imageSrc="./images/tesla.svg" text="Tesla Landing Page" />
         </a>
       </Tools>

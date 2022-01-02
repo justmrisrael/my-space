@@ -8,13 +8,12 @@ import Footer from "./Footer";
 const Contact = ({ BtnText }) => {
   const { cursorChangeHandler } = useContext(MouseContext);
   return (
-    
-    <div BtnText="Shoot!">
+    <div>
       <DotRing />
       <Header />
-      <div style={{ marginTop: "100px", padding: "2.5em", height: "100vh" }}>
-        <h1>Get in touch!</h1>
-        <h4>Got a job, project, or just want to say hello?</h4>
+      <div style={{ marginTop: "100px", padding: "2.5em",}}>
+        <h1 data-aos="fade-up">Get in touch!</h1>
+        <h4>Got a job, project collab idea, or just want to say hello?</h4>
         <form
           style={{
             display: "flex",
@@ -33,14 +32,14 @@ const Contact = ({ BtnText }) => {
           <label for="message">
             <h4>Message:</h4>
           </label>
-          <input className="messageBox" type="text" name="message" />
+          <textarea className="messageBox" type="text" name="message" />
         </form>
         <div
           BtnText="Shoot!"
           className="button hvr-sweep-to-right"
-          style={{ marginTop: "2.5em", display: "flex", alignItems: "center"}}
+          style={{ marginTop: "2.5em", display: "flex", justifyContent: "center", alignItems: "center"}}
         >
-          { BtnText }
+          <h4>Shoot!</h4>
         </div>
       </div>
       <Footer />

@@ -37,20 +37,28 @@
 }
 
 .textArea{
-  -webkit-appearance: none;
   background: #565856;
   height: 3em;
   width: 70%;
+  border: none;
+  border-bottom: 2px solid wheat;
   border-radius: 3px;
   box-shadow: none;
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: wheat;
 }
 
 .messageBox{
-  -webkit-appearance: none;
+  border: none;
+  border-bottom: 2px solid wheat;
   background: #565856;
   height: 10em;
   width: 70%;
   border-radius: 3px;
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: wheat;
 }
 
 @media (max-width: 767px) {
@@ -186,7 +194,6 @@ h3 {
   font-size: 20px;
   font-weight: normal;
   color: #565856;
-  text-transform: uppercase;
 }
 
 h4 {
@@ -196,7 +203,6 @@ h4 {
   line-height: 1.5em;
   font-size: 20px;
   font-weight: normal;
-  text-transform: uppercase;
 }
 
 h5 {
