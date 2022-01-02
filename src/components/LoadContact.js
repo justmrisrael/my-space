@@ -11,10 +11,12 @@ const Contact = ({ BtnText }) => {
     <div>
       <DotRing />
       <Header />
-      <div style={{ marginTop: "100px", padding: "2.5em",}}>
+      <div style={{ marginTop: "100px", padding: "2.5em" }}>
         <h1 data-aos="fade-up">Get in touch!</h1>
         <h4>Got a job, project collab idea, or just want to say hello?</h4>
         <form
+          action="POST"
+          data-netlify="true"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -33,14 +35,23 @@ const Contact = ({ BtnText }) => {
             <h4>Message:</h4>
           </label>
           <textarea className="messageBox" type="text" name="message" />
+          <div className="field">
+            <div data-netlify-recaptha="true" />
+          </div>
+
+          <div onClick="javascript:this.form.submit();" type="submit"
+            BtnText="Shoot!"
+            className="button hvr-sweep-to-right"
+            style={{
+              marginTop: "2.5em",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <h4>Shoot!</h4>
+          </div>
         </form>
-        <div
-          BtnText="Shoot!"
-          className="button hvr-sweep-to-right"
-          style={{ marginTop: "2.5em", display: "flex", justifyContent: "center", alignItems: "center"}}
-        >
-          <h4>Shoot!</h4>
-        </div>
       </div>
       <Footer />
       <div
