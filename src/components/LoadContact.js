@@ -39,7 +39,7 @@ const Contact = ({ BtnText }) => {
             <div data-netlify-recaptha="true" />
           </div>
 
-          <div onClick="javascript:this.form.submit();" type="submit"
+          <button onClick="javascript:this.form.submit();" type="submit"
             BtnText="Shoot!"
             className="button hvr-sweep-to-right"
             style={{
@@ -50,7 +50,7 @@ const Contact = ({ BtnText }) => {
             }}
           >
             <h4>Shoot!</h4>
-          </div>
+          </button>
         </form>
       </div>
       <Footer />
