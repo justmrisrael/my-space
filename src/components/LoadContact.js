@@ -15,7 +15,8 @@ const Contact = ({ BtnText }) => {
         <h1 data-aos="fade-up">Get in touch!</h1>
         <h4>Got a job, project collab idea, or just want to say hello?</h4>
         <form
-          action="POST"
+          name="contact"
+          method="POST"
           data-netlify="true"
           style={{
             display: "flex",
@@ -39,7 +40,7 @@ const Contact = ({ BtnText }) => {
             <div data-netlify-recaptha="true" />
           </div>
 
-          <button onClick="javascript:this.form.submit();" type="submit"
+          <button type="submit"
             BtnText="Shoot!"
             className="button hvr-sweep-to-right"
             style={{
