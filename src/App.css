@@ -49,6 +49,11 @@
   color: wheat;
 }
 
+.textArea:focus {
+  outline: none !important;
+  border:1px solid wheat;
+}
+
 .messageBox{
   border: none;
   border-bottom: 2px solid wheat;
@@ -59,6 +64,11 @@
   font-size: 20px;
   font-family: "Montserrat";
   color: wheat;
+}
+
+.messageBox:focus {
+  outline: none !important;
+  border:1px solid wheat;
 }
 
 @media (max-width: 767px) {

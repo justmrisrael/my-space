@@ -2,13 +2,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 22px;
-    height: 22px;
+    width: 30px;
+    height: 30px;
     border: 2px solid #767B91;
     border-radius: 100%;
     transform: translate(-50%, -50%);
-    -webkit-transition-duration: 100ms;
-    transition-duration: 100ms;
+    -webkit-transition-duration: 300ms;
+    transition-duration: 300ms;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
     will-change: width, height, transform, border;
