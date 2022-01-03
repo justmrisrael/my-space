@@ -5,7 +5,7 @@ import { MouseContext } from "../context/mouse-context";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const Contact = ({ BtnText }) => {
+const Contact = () => {
   const { cursorChangeHandler } = useContext(MouseContext);
   return (
     <div>
