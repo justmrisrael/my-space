@@ -6,7 +6,6 @@ import Value from "./Value";
 import Header from "./Header";
 import Footer from "./Footer";
 
-
 export default function Body({ BtnText }) {
   return (
     <Home className="container">
@@ -15,13 +14,14 @@ export default function Body({ BtnText }) {
         <a>
           <Ava>
             <h3>I'm Israel Musa -- Available for hire.</h3>
-            <h1 >I'm a Front-end Developer and UI/UX Designer</h1>
+            <h1>I'm a Front-end Developer and UI/UX Designer</h1>
           </Ava>
 
           <Intro>
             <h4>
               An enthusiastic and innovative developer, with a focus on
-              developing visually aesthetic and responsive front-end for web applications.
+              developing visually aesthetic and responsive front-end for web
+              applications.
             </h4>
           </Intro>
         </a>
@@ -52,10 +52,10 @@ export default function Body({ BtnText }) {
       </About>
 
       <Tools className="section" id="three">
-      <h1 >Projects</h1>
+        <h1>Projects</h1>
         <a>
-          <Card imageSrc="./images/portfolio.svg" text="My Portfolio"/>
-          <Card imageSrc="./images/tesla.svg" text="Tesla Landing Page" />
+          <Card imageSrc="./images/portfolio.svg" projectName="My Portfolio" projectDesc="my portfolio"/>
+          <Card imageSrc="./images/tesla.svg" projectName="Tesla Clone" projectDesc="A clone of the tesla landing page" />
         </a>
       </Tools>
 
@@ -118,24 +118,24 @@ const Intro = styled.div`
 `;
 
 const Tools = styled.div`
-a{
-  box-sizing: border-box;
-  padding: 200px;
-  padding: 1.5em;
-  display: flex;
-}
-h1{
-  padding-left: 0.3em;
-}
-@media (max-width: 768px) {
-  a{
+  a {
+    box-sizing: border-box;
+    padding: 200px;
+    padding: 1.5em;
     display: flex;
-    flex-direction: column;
   }
-  h1{
-    padding-left: 1em;
+  h1 {
+    padding-left: 0.3em;
   }
-}
+  @media (max-width: 768px) {
+    a {
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      padding-left: 1em;
+    }
+  }
 `;
 
 const About = styled.div`

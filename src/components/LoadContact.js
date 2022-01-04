@@ -18,12 +18,14 @@ const Contact = () => {
           name="contact"
           method="POST"
           data-netlify="true"
+          onSubmit="submit"
           style={{
             display: "flex",
             flexDirection: "column",
             textAlign: "left",
           }}
         >
+          <input type="hidden" name="contact-form" value="contact" />
           <label for="name">
             <h4>Your Name:</h4>
           </label>
@@ -40,8 +42,8 @@ const Contact = () => {
             <div data-netlify-recaptha="true" />
           </div>
 
-          <button type="submit"
-            BtnText="Shoot!"
+          <button 
+            type="submit"
             className="button hvr-sweep-to-right"
             style={{
               marginTop: "2.5em",

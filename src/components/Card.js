@@ -5,7 +5,8 @@ const Card = props => {
     return (
             <Gamble className="card hvr-grow">
                 <Img className="card-image" src={props.imageSrc} />
-                <div className="card-text"> <h4>{props.text}</h4></div>
+                <div className="card-text"> <h4>{props.projectName}</h4></div>
+                <div className="card-desc"> <h5>{props.projectDesc}</h5></div>
                 <div className="links"></div>
             </Gamble>
     )
