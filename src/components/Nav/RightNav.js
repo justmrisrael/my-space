@@ -9,7 +9,7 @@ const RightNav = ({ open }) => {
       <a href="#two" className="hvr-sweep-to-right">About</a>
       <a href="#three" className="hvr-sweep-to-right">Projects</a>
       <Link to="/contact" className="hvr-sweep-to-right">Contact</Link>
-      <a href="./resume/Israel_ Musa_resume.pdf" className="hvr-sweep-to-right">Resumé</a>
+      <a href="./resume/resume.pdf" className="hvr-sweep-to-right">Resumé</a>
     </Menu>
   );
 };
