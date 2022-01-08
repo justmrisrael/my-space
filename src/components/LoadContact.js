@@ -25,7 +25,7 @@ const Contact = () => {
             textAlign: "left",
           }}
         >
-          <input type="hidden" name="contact" value="contact" />
+          <input type="hidden" name="form-name" value="contact" />
           <label for="name">
             <h4>Your Name:</h4>
           </label>
