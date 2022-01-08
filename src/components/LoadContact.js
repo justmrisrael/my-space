@@ -12,7 +12,7 @@ const Contact = () => {
       <DotRing />
       <Header />
       <div style={{ marginTop: "100px", padding: "2.5em" }}>
-        <h1 data-aos="fade-up">Get in touch!</h1>
+        <h1>Get in touch!</h1>
         <h4>Got a job, project collab idea, or just want to say hello?</h4>
         <form
           name="contact"
@@ -25,7 +25,7 @@ const Contact = () => {
             textAlign: "left",
           }}
         >
-          <input type="hidden" name="contact-form" value="contact" />
+          <input type="hidden" name="contact" value="contact" />
           <label for="name">
             <h4>Your Name:</h4>
           </label>
