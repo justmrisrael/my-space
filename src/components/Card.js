@@ -6,7 +6,7 @@ const Card = props => {
             <Gamble className="card hvr-grow">
                 <Img className="card-image" src={props.imageSrc} />
                 <div className="card-text"> <h4>{props.projectName}</h4></div>
-                <div className="card-desc"> <h5>{props.projectDesc}</h5></div>
+                <p className="card-desc"> <h5>{props.projectDesc}</h5></p>
                 <div className="links"></div>
             </Gamble>
     )
