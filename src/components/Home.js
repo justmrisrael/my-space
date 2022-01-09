@@ -5,14 +5,16 @@ import Card from "./Card";
 import Value from "./Value";
 import Header from "./Header";
 import Footer from "./Footer";
+import LocomotiveScroll from "locomotive-scroll";
 
-export default function Body({ BtnText }) {
+export default function Home({ BtnText }) {
+  
   return (
-    <Home className="container">
+    <Body className="container" >
       <Header />
       <Name className="section" id="one">
         <a>
-          <Ava>
+          <Ava id="js-target">
             <h3>I'm Israel Musa -- Available for hire.</h3>
             <h1>I'm a Front-end Developer and UI/UX Designer</h1>
           </Ava>
@@ -37,7 +39,7 @@ export default function Body({ BtnText }) {
       <About className="section" id="two">
         <a>
           <h1>About Me</h1>
-          <h4>
+          <h4 id="js-target">
             <h3>INTRODUCTION</h3>Hello! my name is Israel and I build products
             for the web. At the age of 16, I was introduced to coding and
             learned to create mobile websites. I also found photography and
@@ -51,7 +53,7 @@ export default function Body({ BtnText }) {
         </a>
       </About>
 
-      <Tools className="section" id="three">
+      <Tools id="js-target" className="section" id="three">
         <h1>Projects</h1>
         <a>
           <Card
@@ -69,14 +71,14 @@ export default function Body({ BtnText }) {
 
       <Value />
       <Footer />
-    </Home>
+    </Body>
   );
 }
 
-const scroll = new LocomotiveScroll({
-  el: document.querySelector("#one"),
-  smooth: true,
-});
+const scroll = new LocomotiveScroll();
+const target = document.querySelector('#js-target');
+
+scroll.scrollTo(target);
 
 const DownArrow = styled.img`
   height: 40px;
@@ -163,4 +165,4 @@ const About = styled.div`
   }
 `;
 
-const Home = styled.div``;
+const Body = styled.div``;

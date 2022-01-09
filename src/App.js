@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import "./App.css";
 import DotRing from "./components/DotRing/DotRing";
-import Body from "./components/Body";
+import Home from "./components/Home";
 import { MouseContext } from "./context/mouse-context";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <DotRing />
-      <Body BtnText="Contact Me" />
+      <Home BtnText="Contact Me" />
       <div
         onMouseEnter={() => cursorChangeHandler("hovered")}
         onMouseLeave={() => cursorChangeHandler("")}

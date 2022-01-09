@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Card = props => {
     return (
@@ -17,21 +15,6 @@ const Card = props => {
 // src={props.text}
 // image={props.imageSrc}
 export default Card;
-
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.set(".card", { opacity: 0 });
-gsap.to(".card", {
-  scrollTrigger: {
-    trigger: ".card",
-    start: "top 85%",
-    markers: true,
-    scrub: 0.3,
-  },
-  x: 500,
-  duration: 2,
-  opacity: 1,
-});
 
 const Gamble = styled.div`
     display: flex;
