@@ -54,8 +54,16 @@ export default function Body({ BtnText }) {
       <Tools className="section" id="three">
         <h1>Projects</h1>
         <a>
-          <Card imageSrc="./images/portfolio.svg" projectName="My Portfolio" projectDesc="my portfolio"/>
-          <Card imageSrc="./images/tesla.svg" projectName="Tesla Clone" projectDesc="A clone of the tesla landing page" />
+          <Card
+            imageSrc="./images/portfolio.svg"
+            projectName="My Portfolio"
+            projectDesc="my portfolio"
+          />
+          <Card
+            imageSrc="./images/tesla.svg"
+            projectName="Tesla Clone"
+            projectDesc="A clone of the tesla landing page"
+          />
         </a>
       </Tools>
 
@@ -64,6 +72,11 @@ export default function Body({ BtnText }) {
     </Home>
   );
 }
+
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("#one"),
+  smooth: true,
+});
 
 const DownArrow = styled.img`
   height: 40px;
