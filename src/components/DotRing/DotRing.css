@@ -20,8 +20,8 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     background-color: #767B91;
     transform: translate(-50%, -50%);
     z-index: 999;

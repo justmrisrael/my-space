@@ -6,6 +6,8 @@ import Value from "./Value";
 import Header from "./Header";
 import Footer from "./Footer";
 import LocomotiveScroll from "locomotive-scroll";
+import gsap from "gsap";
+import { ScrollTrigger  } from "gsap/ScrollTrigger";
 
 export default function Home({ BtnText }) {
   
@@ -14,7 +16,7 @@ export default function Home({ BtnText }) {
       <Header />
       <Name className="section" id="one">
         <a>
-          <Ava id="js-target">
+          <Ava>
             <h3>I'm Israel Musa -- Available for hire.</h3>
             <h1>I'm a Front-end Developer and UI/UX Designer</h1>
           </Ava>
@@ -75,10 +77,16 @@ export default function Home({ BtnText }) {
   );
 }
 
-const scroll = new LocomotiveScroll();
-const target = document.querySelector('#js-target');
+//scroll trigger animation
+gsap.registerPlugin(ScrollTrigger);
 
-scroll.scrollTo(target);
+gsap.from(".section", {
+  y: 50,
+  duration: 2,
+  scrollTrigger: ".section"
+})
+
+
 
 const DownArrow = styled.img`
   height: 40px;
