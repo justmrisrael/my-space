@@ -57,7 +57,7 @@ export default function Home({ BtnText }) {
         {/* <Unme src="./images/unme.svg" /> */}
       </About>
 
-      <Tools id="js-target" className="section" id="three">
+      <Tools className="section" id="three">
         <h1>Projects</h1>
         <a>
           <Card
