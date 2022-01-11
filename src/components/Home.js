@@ -52,7 +52,9 @@ export default function Home({ BtnText }) {
             develop aesthetically appealing, device-responsive, and fast-loading
             digital environments.
           </h4>
+          
         </a>
+        {/* <Unme src="./images/unme.svg" /> */}
       </About>
 
       <Tools id="js-target" className="section" id="three">
@@ -95,6 +97,11 @@ const DownArrow = styled.img`
   overflow-x: hidden;
   animation: animateDown infinite 2s;
 `;
+
+// const Unme = styled.img`
+//   height: 200px;
+//   width: 200px;
+// `
 
 const Name = styled.div`
   a {
