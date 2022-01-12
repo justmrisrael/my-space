@@ -58,7 +58,10 @@ export default function Home({ BtnText }) {
       </About>
 
       <Tools className="section" id="three">
-        <h1>Projects</h1>
+        <h1>Projects
+          <p/> <h3>Currently working on project integration. Coming soon.🏋🏼‍♂️</h3>
+        </h1>
+        
         <a>
           <Card
             imageSrc="./images/portfolio.svg"
