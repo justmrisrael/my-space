@@ -8,8 +8,9 @@ const Footer = () => {
         <Menu>
           <h5>Links</h5><br/>
           <a href="https://github.com/justmrisrael/" target="_blank">Github </a>
+          <a href="https://codepen.io/justmrisrael" target="_blank">CodePen</a>
           <a href="https://www.linkedin.com/in/israel-musa-8b8758173/" target="_blank">LinkedIn </a>
-          <a href="./resume/Israel_ Musa_resume.pdf">Resumé </a>
+          <a href="./resume/resume.pdf">Resumé </a>
         </Menu>
         <Btt>
           <a href="#one">Back to top </a>
