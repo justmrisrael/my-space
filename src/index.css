@@ -8,13 +8,10 @@ body{
   -moz-osx-font-smoothing: grayscale;
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
 * {
   cursor: none;
 }
+
 @keyframes animateDown {
   0%, 20%, 50%, 80%, 100%{
     transform: translateY(0);

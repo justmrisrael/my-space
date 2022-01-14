@@ -39,7 +39,7 @@ export default function Home({ BtnText }) {
       <About className="section" id="two">
         <a>
           <h1>About Me</h1>
-          <h4 data-scroll-class="scroll-class" data-scroll id="js-target">
+          <h4>
             <h3>INTRODUCTION</h3>Hello! my name is Israel and I build products
             for the web. At the age of 16, I was introduced to coding and
             learned to create mobile websites. I also found photography and
@@ -57,7 +57,7 @@ export default function Home({ BtnText }) {
       <Tools className="section" id="three">
         <h1>
           Projects
-          <p />{" "}
+          <p />
           <h3>Currently working on project integration. Coming soon.🏋🏼‍♂️</h3>
         </h1>
 
