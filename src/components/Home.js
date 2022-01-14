@@ -5,7 +5,6 @@ import Card from "./Card";
 import Value from "./Value";
 import Header from "./Header";
 import Footer from "./Footer";
-import LocomotiveScroll from "locomotive-scroll";
 
 export default function Home({ BtnText }) {
   
@@ -80,12 +79,6 @@ export default function Home({ BtnText }) {
     </Body>
   );
 }
-
-//scroll
-const scroll = new LocomotiveScroll({
-  el: document.querySelector("[data-scroll-container]"),
-  smooth: true
-});
 
 const DownArrow = styled.img`
   height: 40px;

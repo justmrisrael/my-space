@@ -10,6 +10,7 @@ import App from "./App";
 import Contact from "./components/LoadContact";
 import reportWebVitals from "./reportWebVitals";
 import MouseContextProvider from "./context/mouse-context";
+import LocomotiveScroll from "locomotive-scroll";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -30,3 +31,9 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+//scroll
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("[data-scroll-container]"),
+  smooth: true
+});
