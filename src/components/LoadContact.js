@@ -5,10 +5,10 @@ import { MouseContext } from "../context/mouse-context";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const Contact = () => {
+function Contact () {
   const { cursorChangeHandler } = useContext(MouseContext);
   return (
-    <div>
+    <div className="container" data-scroll-container>
       <DotRing />
       <Header />
       <div style={{ marginTop: "100px", padding: "2.5em" }}>

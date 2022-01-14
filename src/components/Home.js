@@ -9,7 +9,7 @@ import Footer from "./Footer";
 export default function Home({ BtnText }) {
   
   return (
-    <Body className="container" data-scroll-container >
+    <Body className="container" data-scroll-container>
       <Header />
       <Name className="section" id="one">
         <a>
@@ -36,7 +36,7 @@ export default function Home({ BtnText }) {
       </Name>
 
       <About className="section" id="two">
-        <a>
+        <p>
           <h1>About Me</h1>
           <h4>
             <h3>INTRODUCTION</h3>Hello! my name is Israel and I build products
@@ -49,14 +49,13 @@ export default function Home({ BtnText }) {
             develop aesthetically appealing, device-responsive, and fast-loading
             digital environments.
           </h4>
-        </a>
+        </p>
         {/* <Unme src="./images/unme.svg" /> */}
       </About>
 
       <Tools className="section" id="three">
         <h1>
           Projects
-          <p />
           <h3>Currently working on project integration. Coming soon.🏋🏼‍♂️</h3>
         </h1>
 
@@ -159,7 +158,7 @@ const Tools = styled.div`
 `;
 
 const About = styled.div`
-  a {
+  p {
     padding: 1.5em;
     margin: 5em 0;
   }
