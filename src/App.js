@@ -6,6 +6,7 @@ import { MouseContext } from "./context/mouse-context";
 
 function App() {
   const { cursorChangeHandler } = useContext(MouseContext);
+  
   return (
     <div className="App">
       <DotRing />

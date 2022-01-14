@@ -6,13 +6,11 @@ import Value from "./Value";
 import Header from "./Header";
 import Footer from "./Footer";
 import LocomotiveScroll from "locomotive-scroll";
-import gsap from "gsap";
-import { ScrollTrigger  } from "gsap/ScrollTrigger";
 
 export default function Home({ BtnText }) {
   
   return (
-    <Body className="container" >
+    <Body className="container" data-scroll-container >
       <Header />
       <Name className="section" id="one">
         <a>
@@ -52,16 +50,17 @@ export default function Home({ BtnText }) {
             develop aesthetically appealing, device-responsive, and fast-loading
             digital environments.
           </h4>
-          
         </a>
         {/* <Unme src="./images/unme.svg" /> */}
       </About>
 
       <Tools className="section" id="three">
-        <h1>Projects
-          <p/> <h3>Currently working on project integration. Coming soon.🏋🏼‍♂️</h3>
+        <h1>
+          Projects
+          <p />{" "}
+          <h3>Currently working on project integration. Coming soon.🏋🏼‍♂️</h3>
         </h1>
-        
+
         <a>
           <Card
             imageSrc="./images/portfolio.svg"
@@ -81,23 +80,12 @@ export default function Home({ BtnText }) {
     </Body>
   );
 }
+
 //scroll
-// const scroll = new LocomotiveScroll({
-//   element: document.querySelector('[data-scroll-container]'),
-//   smooth: true
-// });
-
-
-//scroll trigger animation
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.from(".section", {
-  y: 50,
-  duration: 2,
-  scrollTrigger: ".section"
-})
-
-
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("[data-scroll-container]"),
+  smooth: true
+});
 
 const DownArrow = styled.img`
   height: 40px;
