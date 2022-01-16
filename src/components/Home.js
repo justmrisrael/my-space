@@ -59,13 +59,13 @@ export default function Home({ BtnText }) {
 
         <a>
           <Card
-            imageSrc="./images/portfolio.svg"
+            imageSrc="https://drive.google.com/uc?export=view&id=18dPOrO3IWy381ccsQFJKkLjRzZrqI2wE"
             projectName="My Portfolio"
             projectDesc="A conpendium of developments and design work by me."
             tech="React, Webpack, CSS, Styled Components, VS Code"
           />
           <Card
-            imageSrc="./images/tesla.svg"
+            imageSrc="https://drive.google.com/uc?export=view&id=1kwPM8flq_FUcAFmS05VTTnUJqm2XF4Ls"
             projectName="Tesla-Clone"
             projectDesc="A clone of the tesla landing page built with React."
             tech="React, Webpack, CSS, Styled Components, VS Code"
