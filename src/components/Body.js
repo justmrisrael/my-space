@@ -6,9 +6,9 @@ import Value from "./Value";
 import Header from "./Header";
 import Footer from "./Footer";
 
-export default function Home({ BtnText }) {
+export default function Body({ BtnText }) {
   return (
-    <Body className="container" data-scroll-container>
+    <Home className="container">
       <Header />
       <Name className="section" id="one">
         <a>
@@ -19,8 +19,9 @@ export default function Home({ BtnText }) {
 
           <Intro>
             <h4>
-              I'm passionate about developing visually aesthetic and responsive
-              front-end for web applications.
+              An enthusiastic and innovative developer, with a focus on
+              developing visually aesthetic and responsive front-end for web
+              applications.
             </h4>
           </Intro>
         </a>
@@ -34,7 +35,7 @@ export default function Home({ BtnText }) {
       </Name>
 
       <About className="section" id="two">
-        <p>
+        <a>
           <h1>About Me</h1>
           <h4>
             <h3>INTRODUCTION</h3>Hello! my name is Israel and I build products
@@ -47,35 +48,20 @@ export default function Home({ BtnText }) {
             develop aesthetically appealing, device-responsive, and fast-loading
             digital environments.
           </h4>
-        </p>
-        {/* <Unme src="./images/unme.svg" /> */}
+        </a>
       </About>
 
       <Tools className="section" id="three">
-        <h1>
-          Projects
-          <h3>Currently working on project integration. Coming soon.🏋🏼‍♂️</h3>
-        </h1>
-
+        <h1>Projects</h1>
         <a>
-          <Card
-            imageSrc="./images/portfolio.svg"
-            projectName="My Portfolio"
-            projectDesc="A conpendium of developments and design work by me."
-            tech="React, Webpack, CSS, Styled Components, VS Code"
-          />
-          <Card
-            imageSrc="./images/tesla.svg"
-            projectName="Tesla-Clone"
-            projectDesc="A clone of the tesla landing page built with React."
-            tech="React, Webpack, CSS, Styled Components, VS Code"
-          />
+          <Card imageSrc="./images/portfolio.svg" projectName="My Portfolio" projectDesc="my portfolio"/>
+          <Card imageSrc="./images/tesla.svg" projectName="Tesla Clone" projectDesc="A clone of the tesla landing page" />
         </a>
       </Tools>
 
       <Value />
       <Footer />
-    </Body>
+    </Home>
   );
 }
 
@@ -86,11 +72,6 @@ const DownArrow = styled.img`
   overflow-x: hidden;
   animation: animateDown infinite 2s;
 `;
-
-// const Unme = styled.img`
-//   height: 200px;
-//   width: 200px;
-// `
 
 const Name = styled.div`
   a {
@@ -139,6 +120,7 @@ const Intro = styled.div`
 const Tools = styled.div`
   a {
     box-sizing: border-box;
+    padding: 200px;
     padding: 1.5em;
     display: flex;
   }
@@ -149,19 +131,15 @@ const Tools = styled.div`
     a {
       display: flex;
       flex-direction: column;
-      padding: 0;
     }
     h1 {
       padding-left: 1em;
-    }
-    h3 {
-      font-size: 15px;
     }
   }
 `;
 
 const About = styled.div`
-  p {
+  a {
     padding: 1.5em;
     margin: 5em 0;
   }
@@ -172,4 +150,4 @@ const About = styled.div`
   }
 `;
 
-const Body = styled.div``;
+const Home = styled.div``;
