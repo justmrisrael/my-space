@@ -10,9 +10,9 @@ import App from "./App";
 import Contact from "./components/LoadContact";
 import reportWebVitals from "./reportWebVitals";
 import MouseContextProvider from "./context/mouse-context";
-import LocomotiveScroll from "locomotive-scroll";
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+// import LocomotiveScroll from "locomotive-scroll";
+// import { gsap } from "gsap";
+// import ScrollTrigger from "gsap/ScrollTrigger";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -31,9 +31,9 @@ ReactDOM.render(
 reportWebVitals();
 
 //scroll
-const scroll = new LocomotiveScroll({
-  el: document.querySelector("[data-scroll-container]"),
-  smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector("[data-scroll-container]"),
+//   smooth: true
+// });
 
 
