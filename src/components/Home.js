@@ -61,7 +61,7 @@ export default function Home({ BtnText }) {
           <Card
             imageSrc="https://drive.google.com/uc?export=view&id=18dPOrO3IWy381ccsQFJKkLjRzZrqI2wE"
             projectName="My Portfolio"
-            projectDesc="A conpendium of developments and design work by me."
+            projectDesc="A conpendium of web product developments and design work by me."
             tech="React, Webpack, CSS, Styled Components, VS Code"
           />
           <Card

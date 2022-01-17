@@ -31,17 +31,19 @@ const Gamble = styled.div`
     padding: 0;
     margin: 5px 0 0;
     font-size: 30px;
-    color: white;
+    color: #999;
+    font-family: ardent;
   }
   h5 {
     font-size: 20px;
+    font-family: ardent;
   }
   h3{
       font-family: Fira;
       font-size: 12px;
       margin: 0;
       padding: 0;
-      color: #999999;
+      color: #fff;
       width: 100%;
   }
   }
