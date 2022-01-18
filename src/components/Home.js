@@ -5,6 +5,7 @@ import Card from "./Card";
 import Value from "./Value";
 import Header from "./Header";
 import Footer from "./Footer";
+import { TimelineMax } from "gsap/all"
 
 export default function Home({ BtnText }) {
   return (
@@ -59,16 +60,18 @@ export default function Home({ BtnText }) {
 
         <a>
           <Card
-            imageSrc="https://drive.google.com/uc?export=view&id=18dPOrO3IWy381ccsQFJKkLjRzZrqI2wE"
+            background="https://drive.google.com/uc?export=view&id=18dPOrO3IWy381ccsQFJKkLjRzZrqI2wE"
             projectName="My Portfolio"
             projectDesc="A conpendium of web product developments and design work by me."
             tech="React, Webpack, CSS, Styled Components, VS Code"
+            link="http://israelmusa.dev"
           />
           <Card
-            imageSrc="https://drive.google.com/uc?export=view&id=1kwPM8flq_FUcAFmS05VTTnUJqm2XF4Ls"
+            background="https://drive.google.com/uc?export=view&id=1kwPM8flq_FUcAFmS05VTTnUJqm2XF4Ls"
             projectName="Tesla-Clone"
             projectDesc="A clone of the tesla landing page built with React."
             tech="React, Webpack, CSS, Styled Components, VS Code"
+            link="tesla-clone-im.netlify.com"
           />
         </a>
       </Tools>
@@ -78,6 +81,8 @@ export default function Home({ BtnText }) {
     </Body>
   );
 }
+
+
 
 const DownArrow = styled.img`
   height: 40px;
@@ -139,8 +144,9 @@ const Intro = styled.div`
 const Tools = styled.div`
   a {
     box-sizing: border-box;
-    padding: 1.5em;
+    padding: 5em;
     display: flex;
+    flex-direction: column;
   }
   h1 {
     padding-left: 0.3em;
@@ -149,10 +155,10 @@ const Tools = styled.div`
     a {
       display: flex;
       flex-direction: column;
-      padding: 0;
+      padding: 1em;
     }
     h1 {
-      padding-left: 1em;
+      font-size: 40px;
     }
     h3 {
       font-size: 15px;

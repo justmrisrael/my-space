@@ -3,11 +3,12 @@ body{
   height: 100vh;
   margin: 0;
   overflow-x: hidden;
-  background-color: #2A2B2A;
+  background-color: #2a2b2a;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* #37393A */
 html {
   scroll-behavior: smooth;
 }

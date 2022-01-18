@@ -46,7 +46,7 @@ const Menu = styled.ul`
       font-family: Bebas;
       text-align: left;
       font-size: 12vw;
-      color: #2A2B2A;
+      color: ##37393A;
       padding: 20px;
       
     }

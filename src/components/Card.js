@@ -3,36 +3,51 @@ import styled from "styled-components";
 
 const Card = (props) => {
   return (
-    <Gamble className="card hvr-overline-from-center">
-      <Img className="card-image" src={props.imageSrc} />
-      <div className="card-text">
-        <h4>{props.projectName}</h4>
+    <Gamble className="hvr-grow" background={props.background}>
+      <div>
+        <h1>{props.projectName}</h1>
+        <p>
+          <h5>{props.projectDesc}</h5>
+          <h3>{props.tech}</h3>
+        </p>
       </div>
-      <p className="card-desc">
-        
-        <h5>{props.projectDesc}</h5>
-      </p>
-      <div className="tech">
-        <h3>{props.tech}</h3>
+      <div
+        className="button hvr-sweep-to-right"
+        style={{
+          padding: "1.5em",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+        href={props.link}
+      >
+        Visit
       </div>
     </Gamble>
   );
 };
 // = props =>
 // src={props.text}
-// image={props.imageSrc}
+// image={props.imageSrc} background: ${props =>`url(${props.background})`};
 export default Card;
 
 const Gamble = styled.div`
+  background: ${(props) =>
+    `url(${props.background})no-repeat top center opacity:0.5`};
+  box-sizing: border-box; 
+  padding: 60px 50px 50px;
   display: flex;
   flex-direction: column;
-  text-align: left;
-  h4 {
-    padding: 0;
-    margin: 5px 0 0;
-    font-size: 30px;
-    color: #999;
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 100px;
+  border: 1px solid #7d827d;
+  @media (max-width: 768px) {
+    padding: 10px 10px 10px;
+  }
+  h1 {
     font-family: ardent;
+    padding-left: 0;
   }
   h5 {
     font-size: 20px;
@@ -41,8 +56,8 @@ const Gamble = styled.div`
   h3{
       font-family: Fira;
       font-size: 12px;
-      margin: 0;
-      padding: 0;
+      margin-bottom: 0;
+      
       color: #fff;
       width: 100%;
   }
@@ -60,8 +75,3 @@ const Gamble = styled.div`
 // @media (max-width: 768px) {
 //     flex-direction: column;
 // }
-const Img = styled.img`
-  width: 100%;
-  height: 100%;
-  margin-right: 10px;
-`;
