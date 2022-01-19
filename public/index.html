@@ -20,29 +20,33 @@
     -->
     <title>Israel Musa</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <link rel="stylesheet" type="text/css" href="loader.css" />
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="base.css" />
   </head>
   <body>
     <noscript>Your browser does not support JavaScript!</noscript>
 
+    <!------App------->
     <div id="root"></div>
-    <!--
-      loader 
-    -->
+
+    <!----------------loader -------------------->
     <div class="loader-wrapper">
       <span class="loader"><span class="loader-inner"></span></span>
     </div>
     <script>
-      $(window).on("load", function () {
-        $(".loader-wrapper").delay(1500).fadeOut("slow");
+      $(document).ready(function () {
+        $(window).on("load", function () {
+          $(".loader-wrapper").delay(1200).slideUp("slow");
+        });
       });
     </script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-    
-    <!-- hide navbar on scroll -->
+
+    <!------ hide navbar on scroll ------>
     <script type="text/javascript">
       var lastScrollTop = 0;
       navbar = document.getElementById("nav");
