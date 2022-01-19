@@ -11,7 +11,7 @@ const Card = (props) => {
           <h3>{props.tech}</h3>
         </p>
       </div>
-      <div
+      <a
         className="button hvr-sweep-to-right"
         style={{
           padding: "1.5em",
@@ -22,7 +22,7 @@ const Card = (props) => {
         href={props.link}
       >
         Visit
-      </div>
+      </a>
     </Gamble>
   );
 };

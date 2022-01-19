@@ -64,14 +64,14 @@ export default function Home({ BtnText }) {
             projectName="My Portfolio"
             projectDesc="A conpendium of web product developments and design work by me."
             tech="React, Webpack, CSS, Styled Components, VS Code"
-            link="http://israelmusa.dev"
+            link="https://israelmusa.dev"
           />
           <Card
             background="https://drive.google.com/uc?export=view&id=1kwPM8flq_FUcAFmS05VTTnUJqm2XF4Ls"
             projectName="Tesla-Clone"
             projectDesc="A clone of the tesla landing page built with React."
             tech="React, Webpack, CSS, Styled Components, VS Code"
-            link="tesla-clone-im.netlify.com"
+            link="https://tesla-clone-im.netlify.com"
           />
         </a>
       </Tools>
