@@ -5,14 +5,13 @@ import Card from "./Card";
 import Value from "./Value";
 import Header from "./Header";
 import Footer from "./Footer";
-import { TimelineMax } from "gsap/all"
 
 export default function Home({ BtnText }) {
   return (
     <Body className="container" data-scroll-container>
       <Header />
       <Name className="section" id="one">
-        <a>
+        <a href="/">
           <Ava>
             <h3>I'm Israel Musa -- Available for hire.</h3>
             <h1>I'm a Front-end Developer and UI/UX Designer</h1>
@@ -58,7 +57,7 @@ export default function Home({ BtnText }) {
           <h3>Currently working on project integration. Coming soon.🏋🏼‍♂️</h3>
         </h1>
 
-        <a>
+        <a href="null">
           <Card
             background="https://drive.google.com/uc?export=view&id=18dPOrO3IWy381ccsQFJKkLjRzZrqI2wE"
             projectName="My Portfolio"
@@ -82,8 +81,16 @@ export default function Home({ BtnText }) {
   );
 }
 
+//gsap work - tween and scrolltrigger
+// let tl = gsap.timeline();
 
+// gsap.from("#two", {
+//   ScrollTrigger: "#two",
+//   y: -100,
+//   scrub: true,
+// });
 
+//css in js
 const DownArrow = styled.img`
   height: 40px;
   padding: 30px 0 30px;

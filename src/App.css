@@ -256,6 +256,12 @@ h5 {
   color: black;
 }
 
+.appear {
+  opacity: 0;
+  transform: translateY(30%);
+  transition: opacity 1s ease-in, transform 1.2s cubic-bezier(.3,0,.23,1.7);
+}
+
 /* Sweep To Right */
 .hvr-sweep-to-right {
   display: inline-block;
