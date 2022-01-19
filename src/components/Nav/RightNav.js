@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const RightNav = ({ open }) => {
   return (
-    <Menu open={open}>
+    <Menu open={open} id="#menu">
       <Link to="/" className="hvr-sweep-to-right">Home</Link>
       <a href="#two" className="hvr-sweep-to-right">About</a>
       <a href="#three" className="hvr-sweep-to-right">Projects</a>
@@ -12,7 +12,7 @@ const RightNav = ({ open }) => {
       <a href="./resume/resume.pdf" className="hvr-sweep-to-right">Resumé</a>
     </Menu>
   );
-};
+}
 
 export default RightNav;
 
@@ -46,7 +46,7 @@ const Menu = styled.ul`
       font-family: Bebas;
       text-align: left;
       font-size: 12vw;
-      color: ##37393A;
+      color: #37393A;
       padding: 20px;
       
     }

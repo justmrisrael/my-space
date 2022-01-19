@@ -12,8 +12,8 @@ function Contact() {
     <div className="container" data-scroll-container>
       <DotRing />
       <Header />
-      <Talk className="section" >
-        <div style={{  marginTop: "150px", padding: "1.5em 0"}}>
+      <Talk className="section">
+        <div style={{ marginTop: "150px", padding: "1.5em 0" }}>
           <h1>Get in touch!</h1>
           <h4>Got a job, project collab idea, or just want to say hello?</h4>
           <form
@@ -59,11 +59,11 @@ function Contact() {
           </form>
         </div>
         <div
-        onMouseEnter={() => cursorChangeHandler("hovered")}
-        onMouseLeave={() => cursorChangeHandler("")}
-      ></div>
+          onMouseEnter={() => cursorChangeHandler("hovered")}
+          onMouseLeave={() => cursorChangeHandler("")}
+        ></div>
       </Talk>
-      
+
       <Footer />
     </div>
   );
@@ -72,7 +72,7 @@ function Contact() {
 export default Contact;
 
 const Talk = styled.div`
-@media (max-width: 768px){
-  padding: 20px;
-}
-`
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+`;
